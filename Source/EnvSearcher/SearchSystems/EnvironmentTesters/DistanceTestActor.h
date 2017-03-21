@@ -2,7 +2,7 @@
 
 #pragma once
 
-#include "SearchSystems/EnvironmentTestActor.h"
+#include "SearchSystems/EnvironmentTesters/EnvironmentTestActor.h"
 #include "DistanceTestActor.generated.h"
 
 /**

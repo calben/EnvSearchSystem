@@ -2,7 +2,7 @@
 
 #include "EnvSearcher.h"
 #include "EnvironmentSearchSystem.h"
-#include "SearchSystems/EnvironmentTestActor.h"
+#include "SearchSystems/EnvironmentTesters/EnvironmentTestActor.h"
 #include "Actors/ValueIndicatorBox.h"
 
 
@@ -38,14 +38,17 @@ void AEnvironmentSearchSystem::PerformSearch()
 		float score = 0;
 		for (AEnvironmentTestActor* test_actor : TestActors)
 		{
-			test_actor->SetActorLocation(point);
-			float result = test_actor->GetScore();
-			if (bDebugMode)
+			if (test_actor)
 			{
-				UE_LOG(LogTemp, Warning, TEXT("%s on point %s returned %f"), *test_actor->GetName(), *point.ToString(), result);
+				test_actor->SetActorLocation(point);
+				float result = test_actor->GetScore();
+				if (bDebugMode)
+				{
+					UE_LOG(LogTemp, Warning, TEXT("%s on point %s returned %f"), *test_actor->GetName(), *point.ToString(), result);
+				}
+				PointToTesterToScoreMap[point][test_actor] = result;
+				score += result;
 			}
-			PointToTesterToScoreMap[point][test_actor] = result;
-			score += result;
 		}
 		if (bDebugMode)
 		{
