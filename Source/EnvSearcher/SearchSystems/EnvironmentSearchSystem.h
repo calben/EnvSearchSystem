@@ -9,7 +9,7 @@
 
 #include "EnvironmentSearchSystem.generated.h"
 
-struct CompareByVectorLength {
+struct CompareByVectorString {
 	bool operator()(const FVector a, const FVector b) const {
 		return a.ToString() < b.ToString();
 	}
@@ -51,12 +51,12 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		TSubclassOf<class AValueIndicatorBox> ValueIndicatorBoxClass;
 
-	std::map<FVector, class AValueIndicatorBox*, CompareByVectorLength> PointToValueIndicatorMap;
+	std::map<FVector, class AValueIndicatorBox*, CompareByVectorString> PointToValueIndicatorMap;
 
-	std::map<FVector, std::map<class AEnvironmentTestActor*, float>, CompareByVectorLength> PointToTesterToScoreMap;
+	std::map<FVector, std::map<class AEnvironmentTestActor*, float>, CompareByVectorString> PointToTesterToScoreMap;
 
 	// there are two maps here for performance reasons
-	std::map<FVector, float, CompareByVectorLength> PointToScoreMap;
+	std::map<FVector, float, CompareByVectorString> PointToScoreMap;
 
 	std::map<float, FVector> ScoreToPointMap;
 
@@ -68,5 +68,15 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "EnvironmentSearching")
 		void ScaleIndicatorBoxValues();
+
+	void GetLowestScoringPoint(FVector* Vector);
+
+	void GetHighestScoringPoint(FVector* Vector);
+
+	UFUNCTION(BlueprintCallable, Category = "EnvironmentSearching")
+		void GetLowestScoringPoint(FVector& VectorOUT);
+
+	UFUNCTION(BlueprintCallable, Category = "EnvironmentSearching")
+		void GetHighestScoringPoint(FVector& VectorOUT);
 
 };

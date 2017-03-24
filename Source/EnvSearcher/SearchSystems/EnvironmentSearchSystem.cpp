@@ -98,3 +98,36 @@ void AEnvironmentSearchSystem::ScaleIndicatorBoxValues()
 		UE_LOG(LogTemp, Warning, TEXT("now %f"), pair.second->Value);
 	}
 }
+
+void AEnvironmentSearchSystem::GetLowestScoringPoint(FVector* Vector)
+{
+	if (ScoreToPointMap.size() > 0)
+	{
+		*Vector = ScoreToPointMap.begin()->second;
+	}
+}
+
+void AEnvironmentSearchSystem::GetHighestScoringPoint(FVector* Vector)
+{
+	if (ScoreToPointMap.size() > 0)
+	{
+		*Vector = ScoreToPointMap.end()->second;
+	}
+}
+
+
+void AEnvironmentSearchSystem::GetLowestScoringPoint(FVector& Vector)
+{
+	if (ScoreToPointMap.size() > 0)
+	{
+		Vector = ScoreToPointMap.begin()->second;
+	}
+}
+
+void AEnvironmentSearchSystem::GetHighestScoringPoint(FVector& Vector)
+{
+	if (ScoreToPointMap.size() > 0)
+	{
+		Vector = ScoreToPointMap.end()->second;
+	}
+}
