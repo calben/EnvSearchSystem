@@ -33,39 +33,10 @@ void AEnvironmentSearchSystem::PerformSearch()
 	const clock_t begin_time = clock();
 	PointToScoreMap.empty();
 	ScoreToPointMap.empty();
-	for (FVector point : SearchPoints)
+	ScorePoints(&TestActors, &SearchPoints, &PointToTesterToScoreMap, &PointToScoreMap, &ScoreToPointMap, bDebugMode);
+	if (bShowIndicatorBoxes)
 	{
-		float score = 0;
-		for (AEnvironmentTestActor* test_actor : TestActors)
-		{
-			if (test_actor)
-			{
-				test_actor->SetActorLocation(point);
-				float result = test_actor->GetScore();
-				if (bDebugMode)
-				{
-					UE_LOG(LogTemp, Warning, TEXT("%s on point %s returned %f"), *test_actor->GetName(), *point.ToString(), result);
-				}
-				PointToTesterToScoreMap[point][test_actor] = result;
-				score += result;
-			}
-		}
-		if (bDebugMode)
-		{
-			UE_LOG(LogTemp, Warning, TEXT("point %s scored %f"), *point.ToString(), score);
-		}
-		if (bShowIndicatorBoxes)
-		{
-			if (ValueIndicatorBoxClass != nullptr)
-			{
-				AValueIndicatorBox* SpawnedIndicatorBox = GetWorld()->SpawnActor<AValueIndicatorBox>(ValueIndicatorBoxClass, point, FRotator::ZeroRotator);
-				PointToValueIndicatorMap[point] = SpawnedIndicatorBox;
-				SpawnedIndicatorBox->AttachToActor(this, FAttachmentTransformRules::KeepWorldTransform);
-				SpawnedIndicatorBox->SetValue(score);
-			}
-		}
-		PointToScoreMap[point] = score;
-		ScoreToPointMap[score] = point;
+		SpawnIndicatorBoxes(this, &SearchPoints, ValueIndicatorBoxClass, &PointToValueIndicatorMap, &PointToScoreMap);
 	}
 	if (bShowIndicatorBoxes && bScaleIndicatorBoxValues)
 	{
@@ -129,5 +100,55 @@ void AEnvironmentSearchSystem::GetHighestScoringPoint(FVector& Vector)
 	if (ScoreToPointMap.size() > 0)
 	{
 		Vector = ScoreToPointMap.end()->second;
+	}
+}
+
+void AEnvironmentSearchSystem::SpawnIndicatorBoxes(AActor* Parent, TArray<FVector>* Points, TSubclassOf<class AValueIndicatorBox> ValueIndicatorBoxClass, std::map<FVector, class AValueIndicatorBox*, CompareByVectorString>* PointToValueIndicatorMap, std::map<FVector, float, CompareByVectorString>* PointToScoreMap)
+{
+	UWorld* World = GEngine->GetWorldFromContextObject(Parent);
+	for (FVector point : (*Points))
+	{
+		if (ValueIndicatorBoxClass != nullptr)
+		{
+			AValueIndicatorBox* SpawnedIndicatorBox = World->SpawnActor<AValueIndicatorBox>(ValueIndicatorBoxClass, point, FRotator::ZeroRotator);
+			(*PointToValueIndicatorMap)[point] = SpawnedIndicatorBox;
+			SpawnedIndicatorBox->AttachToActor(Parent, FAttachmentTransformRules::KeepWorldTransform);
+			SpawnedIndicatorBox->SetValue((*PointToScoreMap)[point]);
+		}
+	}
+}
+
+void AEnvironmentSearchSystem::ScorePoints(TArray<AEnvironmentTestActor*>* TestActors, TArray<FVector>* Points, std::map<FVector, std::map<class AEnvironmentTestActor*, float>, CompareByVectorString>* PointToTesterToScoreMap, std::map<FVector, float, CompareByVectorString>* PointToScoreMap, std::map<float, FVector>* ScoreToPointMap, bool bDebugMode)
+{
+	if (TestActors != nullptr && Points != nullptr && PointToTesterToScoreMap != nullptr && PointToScoreMap != nullptr, ScoreToPointMap != nullptr)
+	{
+		for (FVector point : (*Points))
+		{
+			float score = 0;
+			for (AEnvironmentTestActor* test_actor : (*TestActors))
+			{
+				if (test_actor)
+				{
+					test_actor->SetActorLocation(point);
+					float result = test_actor->GetScore();
+					if (bDebugMode)
+					{
+						UE_LOG(LogTemp, Warning, TEXT("%s on point %s returned %f"), *test_actor->GetName(), *point.ToString(), result);
+					}
+					(*PointToTesterToScoreMap)[point][test_actor] = result;
+					score += result;
+				}
+			}
+			if (bDebugMode)
+			{
+				UE_LOG(LogTemp, Warning, TEXT("point %s scored %f"), *point.ToString(), score);
+			}
+			(*PointToScoreMap)[point] = score;
+			(*ScoreToPointMap)[score] = point;
+		}
+	}
+	else
+	{
+		UE_LOG(LogTemp, Warning, TEXT("One of the parameters provided to ScorePoints was null"));
 	}
 }

@@ -79,4 +79,8 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "EnvironmentSearching")
 		void GetHighestScoringPoint(FVector& VectorOUT);
 
+	static void SpawnIndicatorBoxes(AActor* Parent, TArray<FVector>* Points, TSubclassOf<class AValueIndicatorBox> ValueIndicatorBoxClass, std::map<FVector, class AValueIndicatorBox*, CompareByVectorString>* PointToValueIndicatorMap, std::map<FVector, float, CompareByVectorString>* PointToScoreMap);
+
+	static void ScorePoints(TArray<AEnvironmentTestActor*>* TestActors, TArray<FVector>* Points, std::map<FVector, std::map<class AEnvironmentTestActor*, float>, CompareByVectorString>* PointToTesterToScoreMap, std::map<FVector, float, CompareByVectorString>* PointToScoreMap, std::map<float, FVector>* ScoreToPointMap, bool bDebugMode);
+
 };

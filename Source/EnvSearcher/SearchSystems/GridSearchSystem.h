@@ -3,15 +3,8 @@
 #pragma once
 
 #include "SearchSystems/EnvironmentSearchSystem.h"
+#include "EnvSearchSystemUtils.h"
 #include "GridSearchSystem.generated.h"
-
-UENUM(BlueprintType)
-enum class EGridShape : uint8
-{
-	Square,
-	Diamond,
-	Circle
-};
 
 /**
  *
@@ -44,7 +37,6 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		float GridZSpacing;
 
-	UFUNCTION(BlueprintCallable, Category = "EnvironmentSearching")
-		void GenerateGridPoints();
+	virtual void PerformSearch() override;
 
 };
