@@ -31,6 +31,6 @@ public:
 		bool bStopIfGoalReached; //!< stops if the goal is reached unless minimum iterations not reached
 
 	UFUNCTION(BlueprintCallable, Category = "EnvironmentSearching")
-		void PerformIterativeSearch();
+		virtual void PerformSearch() override;
 	
 };

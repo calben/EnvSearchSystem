@@ -4,30 +4,43 @@
 #include "BestSubGridSearchSystem.h"
 
 
-void ABestSubGridSearchSystem::PerformIterativeSearch()
+void ABestSubGridSearchSystem::PerformSearch()
 {
 	int iterations = 1;
+	FVector search_origin = GetActorLocation();
+	TArray<FVector> iteration_search_points;
 	while (true)
 	{
-		EnvSearchSystemUtils::GenerateGrid(GridShape, GetActorLocation(), GridXCount, GridYCount, GridZCount, GridXSpacing, GridYSpacing, GridZSpacing, &SearchPoints);
-		FVector new_search_position;
-		if (bScoreIsError)
-		{
-			GetLowestScoringPoint(new_search_position);
-		}
-		else
-		{
-			GetHighestScoringPoint(new_search_position);
-		}
-		SetActorLocation(new_search_position);
 		if (bDebugMode)
 		{
-			UE_LOG(LogTemp, Warning, TEXT("%s iteration %d at %s"), *GetName(), iterations, *new_search_position.ToString());
+			UE_LOG(LogTemp, Warning, TEXT("%s iteration %d at %s"), *GetName(), iterations, *search_origin.ToString());
 		}
+		EnvSearchSystemUtils::GenerateGrid(GridShape, GetActorLocation(), GridXCount, GridYCount, GridZCount, GridXSpacing, GridYSpacing, GridZSpacing, &iteration_search_points);
+		for (FVector v : iteration_search_points)
+		{
+			SearchPoints.Add(v);
+		}
+		ScorePoints(&TestActors, &iteration_search_points, &PointToTesterToScoreMap, &PointToScoreMap, &ScoreToPointMap, bDebugMode);
 		if (iterations >= MaximumIterations)
 		{
 			break;
 		}
+		if (bScoreIsError)
+		{
+			GetLowestScoringPoint(search_origin);
+		}
+		else
+		{
+			GetHighestScoringPoint(search_origin);
+		}
 		iterations++;
+	}
+	if (bShowIndicatorBoxes)
+	{
+		SpawnIndicatorBoxes(this, &SearchPoints, ValueIndicatorBoxClass, &PointToValueIndicatorMap, &PointToScoreMap);
+	}
+	if (bShowIndicatorBoxes && bScaleIndicatorBoxValues)
+	{
+		ScaleIndicatorBoxValues();
 	}
 }
