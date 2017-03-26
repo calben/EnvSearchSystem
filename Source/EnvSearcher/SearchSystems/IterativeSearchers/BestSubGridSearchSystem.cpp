@@ -15,13 +15,13 @@ void ABestSubGridSearchSystem::PerformSearch()
 		{
 			UE_LOG(LogTemp, Warning, TEXT("%s iteration %d at %s"), *GetName(), iterations, *search_origin.ToString());
 		}
-		EnvSearchSystemUtils::GenerateGrid(GridShape, GetActorLocation(), GridXCount, GridYCount, GridZCount, GridXSpacing, GridYSpacing, GridZSpacing, &iteration_search_points);
+		EnvSearchSystemUtils::GenerateGrid(GridShape, search_origin, GridXCount, GridYCount, GridZCount, GridXSpacing, GridYSpacing, GridZSpacing, &iteration_search_points);
 		for (FVector v : iteration_search_points)
 		{
 			SearchPoints.Add(v);
 		}
 		ScorePoints(&TestActors, &iteration_search_points, &PointToTesterToScoreMap, &PointToScoreMap, &ScoreToPointMap, bDebugMode);
-		if (iterations >= MaximumIterations)
+		if (iterations > MaximumIterations)
 		{
 			break;
 		}
@@ -37,7 +37,7 @@ void ABestSubGridSearchSystem::PerformSearch()
 	}
 	if (bShowIndicatorBoxes)
 	{
-		SpawnIndicatorBoxes(this, &SearchPoints, ValueIndicatorBoxClass, &PointToValueIndicatorMap, &PointToScoreMap);
+		SpawnIndicatorBoxes(this, &PointToScoreMap, ValueIndicatorBoxClass, &PointToValueIndicatorMap);
 	}
 	if (bShowIndicatorBoxes && bScaleIndicatorBoxValues)
 	{

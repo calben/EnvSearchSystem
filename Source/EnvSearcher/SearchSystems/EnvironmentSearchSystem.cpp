@@ -36,7 +36,7 @@ void AEnvironmentSearchSystem::PerformSearch()
 	ScorePoints(&TestActors, &SearchPoints, &PointToTesterToScoreMap, &PointToScoreMap, &ScoreToPointMap, bDebugMode);
 	if (bShowIndicatorBoxes)
 	{
-		SpawnIndicatorBoxes(this, &SearchPoints, ValueIndicatorBoxClass, &PointToValueIndicatorMap, &PointToScoreMap);
+		SpawnIndicatorBoxes(this, &PointToScoreMap, ValueIndicatorBoxClass, &PointToValueIndicatorMap);
 	}
 	if (bShowIndicatorBoxes && bScaleIndicatorBoxValues)
 	{
@@ -103,17 +103,17 @@ void AEnvironmentSearchSystem::GetHighestScoringPoint(FVector& Vector)
 	}
 }
 
-void AEnvironmentSearchSystem::SpawnIndicatorBoxes(AActor* Parent, TArray<FVector>* Points, TSubclassOf<class AValueIndicatorBox> ValueIndicatorBoxClass, std::map<FVector, class AValueIndicatorBox*, CompareByVectorString>* PointToValueIndicatorMap, std::map<FVector, float, CompareByVectorString>* PointToScoreMap)
+void AEnvironmentSearchSystem::SpawnIndicatorBoxes(AActor* Parent, std::map<FVector, float, CompareByVectorString>* PointToScoreMap, TSubclassOf<class AValueIndicatorBox> ValueIndicatorBoxClass, std::map<FVector, class AValueIndicatorBox*, CompareByVectorString>* PointToValueIndicatorMap)
 {
 	UWorld* World = GEngine->GetWorldFromContextObject(Parent);
-	for (FVector point : (*Points))
+	for (auto pair : (*PointToScoreMap))
 	{
 		if (ValueIndicatorBoxClass != nullptr)
 		{
-			AValueIndicatorBox* SpawnedIndicatorBox = World->SpawnActor<AValueIndicatorBox>(ValueIndicatorBoxClass, point, FRotator::ZeroRotator);
-			(*PointToValueIndicatorMap)[point] = SpawnedIndicatorBox;
+			AValueIndicatorBox* SpawnedIndicatorBox = World->SpawnActor<AValueIndicatorBox>(ValueIndicatorBoxClass, pair.first, FRotator::ZeroRotator);
+			(*PointToValueIndicatorMap)[pair.first] = SpawnedIndicatorBox;
 			SpawnedIndicatorBox->AttachToActor(Parent, FAttachmentTransformRules::KeepWorldTransform);
-			SpawnedIndicatorBox->SetValue((*PointToScoreMap)[point]);
+			SpawnedIndicatorBox->SetValue(pair.second);
 		}
 	}
 }
