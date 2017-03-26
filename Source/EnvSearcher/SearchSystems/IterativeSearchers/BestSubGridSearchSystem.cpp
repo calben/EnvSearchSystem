@@ -9,8 +9,7 @@ void ABestSubGridSearchSystem::PerformIterativeSearch()
 	int iterations = 1;
 	while (true)
 	{
-//		GenerateGridPoints();
-		PerformSearch();
+		EnvSearchSystemUtils::GenerateGrid(GridShape, GetActorLocation(), GridXCount, GridYCount, GridZCount, GridXSpacing, GridYSpacing, GridZSpacing, &SearchPoints);
 		FVector new_search_position;
 		if (bScoreIsError)
 		{

@@ -3,7 +3,6 @@
 #pragma once
 
 #include "SearchSystems/EnvironmentSearchSystem.h"
-#include "EnvSearchSystemUtils.h"
 #include "GridSearchSystem.generated.h"
 
 /**
