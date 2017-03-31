@@ -5,7 +5,6 @@
 #include "SearchSystems/EnvironmentTesters/EnvironmentTestActor.h"
 #include "Actors/ValueIndicatorBox.h"
 
-
 // Sets default values
 AEnvironmentSearchSystem::AEnvironmentSearchSystem()
 {
