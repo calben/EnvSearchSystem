@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_27d4a60e99bf6083ec4c84ae68883d61" kind="dir">
+    <compoundname>EnvSearcher/Actors</compoundname>
+    <innerfile refid="_value_indicator_box_8cpp">ValueIndicatorBox.cpp</innerfile>
+    <innerfile refid="_value_indicator_box_8h">ValueIndicatorBox.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="EnvSearcher/Actors/"/>
+  </compounddef>
+</doxygen>

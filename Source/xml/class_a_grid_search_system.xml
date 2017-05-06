@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_a_grid_search_system" kind="class" language="C++" prot="public">
+    <compoundname>AGridSearchSystem</compoundname>
+    <basecompoundref refid="class_a_environment_search_system" prot="public" virt="non-virtual">AEnvironmentSearchSystem</basecompoundref>
+    <derivedcompoundref refid="class_a_best_sub_grid_search_system" prot="public" virt="non-virtual">ABestSubGridSearchSystem</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_a_grid_search_system_1ac9999f951acb24b1fe05cac6c0b443aa" prot="public" static="no" mutable="no">
+        <type>EGridShape</type>
+        <definition>EGridShape AGridSearchSystem::GridShape</definition>
+        <argsstring></argsstring>
+        <name>GridShape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/GridSearchSystem.h" line="20" column="1" bodyfile="EnvSearcher/SearchSystems/GridSearchSystem.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_grid_search_system_1a2b1ee04620c8dad76b6d69f92e492795" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AGridSearchSystem::GridXCount</definition>
+        <argsstring></argsstring>
+        <name>GridXCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/GridSearchSystem.h" line="23" column="1" bodyfile="EnvSearcher/SearchSystems/GridSearchSystem.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_grid_search_system_1a73b54c667352b1166298b120cddb137d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AGridSearchSystem::GridYCount</definition>
+        <argsstring></argsstring>
+        <name>GridYCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/GridSearchSystem.h" line="26" column="1" bodyfile="EnvSearcher/SearchSystems/GridSearchSystem.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_grid_search_system_1ad322dc62610caa0df03cdb938fe87aee" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AGridSearchSystem::GridZCount</definition>
+        <argsstring></argsstring>
+        <name>GridZCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/GridSearchSystem.h" line="29" column="1" bodyfile="EnvSearcher/SearchSystems/GridSearchSystem.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_grid_search_system_1a1fb0a7b5cd7bf59bd583340a7cbe1655" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AGridSearchSystem::GridXSpacing</definition>
+        <argsstring></argsstring>
+        <name>GridXSpacing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/GridSearchSystem.h" line="32" column="1" bodyfile="EnvSearcher/SearchSystems/GridSearchSystem.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_grid_search_system_1a3f5da0cbd167ad70373409792d11285e" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AGridSearchSystem::GridYSpacing</definition>
+        <argsstring></argsstring>
+        <name>GridYSpacing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/GridSearchSystem.h" line="35" column="1" bodyfile="EnvSearcher/SearchSystems/GridSearchSystem.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_grid_search_system_1a8795a1d9083d06bf71fb1b6e607eafba" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AGridSearchSystem::GridZSpacing</definition>
+        <argsstring></argsstring>
+        <name>GridZSpacing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/GridSearchSystem.h" line="38" column="1" bodyfile="EnvSearcher/SearchSystems/GridSearchSystem.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_grid_search_system_1a39d548469787ff67cfa963736ed3c271" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void AGridSearchSystem::PerformSearch</definition>
+        <argsstring>() override</argsstring>
+        <name>PerformSearch</name>
+        <reimplements refid="class_a_environment_search_system_1a65322d27f18850e563e7e9d132c2d528">PerformSearch</reimplements>
+        <reimplementedby refid="class_a_best_sub_grid_search_system_1a80cf198086edfa0ef24a1c5de5c6ff9d">PerformSearch</reimplementedby>
+        <briefdescription>
+<para>Performs a search at the current location. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/GridSearchSystem.h" line="40" column="1" bodyfile="EnvSearcher/SearchSystems/GridSearchSystem.cpp" bodystart="6" bodyend="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="32">
+        <label>AEnvironmentSearchSystem</label>
+        <link refid="class_a_environment_search_system"/>
+        <childnode refid="33" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>AActor</label>
+      </node>
+      <node id="34">
+        <label>ABestSubGridSearchSystem</label>
+        <link refid="class_a_best_sub_grid_search_system"/>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>AGridSearchSystem</label>
+        <link refid="class_a_grid_search_system"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="36">
+        <label>AEnvironmentSearchSystem</label>
+        <link refid="class_a_environment_search_system"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>AActor</label>
+      </node>
+      <node id="35">
+        <label>AGridSearchSystem</label>
+        <link refid="class_a_grid_search_system"/>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="EnvSearcher/SearchSystems/GridSearchSystem.h" line="14" column="1" bodyfile="EnvSearcher/SearchSystems/GridSearchSystem.h" bodystart="13" bodyend="42"/>
+    <listofallmembers>
+      <member refid="class_a_environment_search_system_1a52a2902ecd5195065dea44cb3ea95abb" prot="public" virt="non-virtual"><scope>AGridSearchSystem</scope><name>AEnvironmentSearchSystem</name></member>
+      <member refid="class_a_environment_search_system_1a616c480011cab015dd830fd852419206" prot="public" virt="non-virtual"><scope>AGridSearchSystem</scope><name>bDebugMode</name></member>
+      <member refid="class_a_environment_search_system_1a2e8839a3070f6c1da1af28adf870e4d0" prot="public" virt="virtual"><scope>AGridSearchSystem</scope><name>BeginPlay</name></member>
+      <member refid="class_a_environment_search_system_1a5abdf57c9d9c425387b77f8c93b3d07f" prot="public" virt="non-virtual"><scope>AGridSearchSystem</scope><name>bScaleIndicatorBoxValues</name></member>
+      <member refid="class_a_environment_search_system_1a672c9b7613503b65aef96d591188b002" prot="public" virt="non-virtual"><scope>AGridSearchSystem</scope><name>bShowClockTime</name></member>
+      <member refid="class_a_environment_search_system_1a25aefcb32532d14d68ca67290f94bbef" prot="public" virt="non-virtual"><scope>AGridSearchSystem</scope><name>bShowIndicatorBoxes</name></member>
+      <member refid="class_a_environment_search_system_1afd4e7468511d11a80f1bb5c1b597c411" prot="public" virt="non-virtual"><scope>AGridSearchSystem</scope><name>GetHighestScoringPoint</name></member>
+      <member refid="class_a_environment_search_system_1a4c74de48fcb84e22a785b0c1e9706451" prot="public" virt="non-virtual"><scope>AGridSearchSystem</scope><name>GetHighestScoringPoint</name></member>
+      <member refid="class_a_environment_search_system_1a6747d34fceaf48b0d737d94830825122" prot="public" virt="non-virtual"><scope>AGridSearchSystem</scope><name>GetLowestScoringPoint</name></member>
+      <member refid="class_a_environment_search_system_1a182b4589433aa0a782f83c9daa5db5e1" prot="public" virt="non-virtual"><scope>AGridSearchSystem</scope><name>GetLowestScoringPoint</name></member>
+      <member refid="class_a_grid_search_system_1ac9999f951acb24b1fe05cac6c0b443aa" prot="public" virt="non-virtual"><scope>AGridSearchSystem</scope><name>GridShape</name></member>
+      <member refid="class_a_grid_search_system_1a2b1ee04620c8dad76b6d69f92e492795" prot="public" virt="non-virtual"><scope>AGridSearchSystem</scope><name>GridXCount</name></member>
+      <member refid="class_a_grid_search_system_1a1fb0a7b5cd7bf59bd583340a7cbe1655" prot="public" virt="non-virtual"><scope>AGridSearchSystem</scope><name>GridXSpacing</name></member>
+      <member refid="class_a_grid_search_system_1a73b54c667352b1166298b120cddb137d" prot="public" virt="non-virtual"><scope>AGridSearchSystem</scope><name>GridYCount</name></member>
+      <member refid="class_a_grid_search_system_1a3f5da0cbd167ad70373409792d11285e" prot="public" virt="non-virtual"><scope>AGridSearchSystem</scope><name>GridYSpacing</name></member>
+      <member refid="class_a_grid_search_system_1ad322dc62610caa0df03cdb938fe87aee" prot="public" virt="non-virtual"><scope>AGridSearchSystem</scope><name>GridZCount</name></member>
+      <member refid="class_a_grid_search_system_1a8795a1d9083d06bf71fb1b6e607eafba" prot="public" virt="non-virtual"><scope>AGridSearchSystem</scope><name>GridZSpacing</name></member>
+      <member refid="class_a_grid_search_system_1a39d548469787ff67cfa963736ed3c271" prot="public" virt="virtual"><scope>AGridSearchSystem</scope><name>PerformSearch</name></member>
+      <member refid="class_a_environment_search_system_1a75328c6940bcd69545cc3595c9e8b49f" prot="public" virt="non-virtual"><scope>AGridSearchSystem</scope><name>PointToScoreMap</name></member>
+      <member refid="class_a_environment_search_system_1ac43f3a540a94c64e9c5d9212075482ff" prot="public" virt="non-virtual"><scope>AGridSearchSystem</scope><name>PointToTesterToScoreMap</name></member>
+      <member refid="class_a_environment_search_system_1a58d68a194ba7e81073899e7a8c5815bd" prot="public" virt="non-virtual"><scope>AGridSearchSystem</scope><name>PointToValueIndicatorMap</name></member>
+      <member refid="class_a_environment_search_system_1a5da883e1bfcb337a4de1b2c8441e1a78" prot="public" virt="non-virtual"><scope>AGridSearchSystem</scope><name>ScaleIndicatorBoxValues</name></member>
+      <member refid="class_a_environment_search_system_1a8493b3ead5a9920189cfc32ac664a544" prot="public" virt="non-virtual"><scope>AGridSearchSystem</scope><name>Scene</name></member>
+      <member refid="class_a_environment_search_system_1affd5cdac03d40fde06fae4346cc236a1" prot="public" virt="non-virtual"><scope>AGridSearchSystem</scope><name>ScorePoints</name></member>
+      <member refid="class_a_environment_search_system_1acde5d1baca6348eebd53d18f09e7fbd4" prot="public" virt="non-virtual"><scope>AGridSearchSystem</scope><name>ScoreToPointMap</name></member>
+      <member refid="class_a_environment_search_system_1a58d6b658eedc8c6a8cb23ea34aaf063f" prot="public" virt="non-virtual"><scope>AGridSearchSystem</scope><name>SearchPoints</name></member>
+      <member refid="class_a_environment_search_system_1aadc73681064fd1d9ceeea6ee1519892b" prot="public" virt="non-virtual"><scope>AGridSearchSystem</scope><name>SpawnIndicatorBoxes</name></member>
+      <member refid="class_a_environment_search_system_1a62822fdb21a299bed41177034b8344e1" prot="public" virt="non-virtual"><scope>AGridSearchSystem</scope><name>TestActors</name></member>
+      <member refid="class_a_environment_search_system_1aff63d054a27b8e45e999533e0c5e0f0f" prot="public" virt="virtual"><scope>AGridSearchSystem</scope><name>Tick</name></member>
+      <member refid="class_a_environment_search_system_1a1b668edb5d5a912e06d1ccab18821d1c" prot="public" virt="non-virtual"><scope>AGridSearchSystem</scope><name>ValueIndicatorBoxClass</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

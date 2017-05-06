@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_env_searcher_8cpp" kind="file" language="C++">
+    <compoundname>EnvSearcher.cpp</compoundname>
+    <includes refid="_env_searcher_8h" local="yes">EnvSearcher.h</includes>
+    <incdepgraph>
+      <node id="14">
+        <label>EnvSearcher.h</label>
+        <link refid="_env_searcher_8h_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>Engine.h</label>
+      </node>
+      <node id="13">
+        <label>EnvSearcher/EnvSearcher.cpp</label>
+        <link refid="_env_searcher_8cpp"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_env_searcher_8cpp_1a245f8c8cd26ea330e82daabb5180daf7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IMPLEMENT_PRIMARY_GAME_MODULE</definition>
+        <argsstring>(FDefaultGameModuleImpl, EnvSearcher, &quot;EnvSearcher&quot;)</argsstring>
+        <name>IMPLEMENT_PRIMARY_GAME_MODULE</name>
+        <param>
+          <type>FDefaultGameModuleImpl</type>
+        </param>
+        <param>
+          <type><ref refid="class_env_searcher" kindref="compound">EnvSearcher</ref></type>
+        </param>
+        <param>
+          <type>&quot;EnvSearcher&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/EnvSearcher.cpp" line="5" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Fill<sp/>out<sp/>your<sp/>copyright<sp/>notice<sp/>in<sp/>the<sp/>Description<sp/>page<sp/>of<sp/>Project<sp/>Settings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;EnvSearcher.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">IMPLEMENT_PRIMARY_GAME_MODULE(<sp/>FDefaultGameModuleImpl,<sp/><ref refid="class_env_searcher" kindref="compound">EnvSearcher</ref>,<sp/></highlight><highlight class="stringliteral">&quot;EnvSearcher&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+    </programlisting>
+    <location file="EnvSearcher/EnvSearcher.cpp"/>
+  </compounddef>
+</doxygen>

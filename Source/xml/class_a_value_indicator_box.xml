@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_a_value_indicator_box" kind="class" language="C++" prot="public">
+    <compoundname>AValueIndicatorBox</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">AActor</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_a_value_indicator_box_1ae6c7d44d2e220ae145b74e4445c148d5" prot="public" static="no" mutable="no">
+        <type>USceneComponent *</type>
+        <definition>USceneComponent* AValueIndicatorBox::Scene</definition>
+        <argsstring></argsstring>
+        <name>Scene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/Actors/ValueIndicatorBox.h" line="25" column="1" bodyfile="EnvSearcher/Actors/ValueIndicatorBox.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_value_indicator_box_1ad23d161b269bdeceb0da9776fe6111c3" prot="public" static="no" mutable="no">
+        <type>UStaticMeshComponent *</type>
+        <definition>UStaticMeshComponent* AValueIndicatorBox::Mesh</definition>
+        <argsstring></argsstring>
+        <name>Mesh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/Actors/ValueIndicatorBox.h" line="28" column="1" bodyfile="EnvSearcher/Actors/ValueIndicatorBox.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_value_indicator_box_1ad0f1870b606426e332c62c8040c9b26b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AValueIndicatorBox::Value</definition>
+        <argsstring></argsstring>
+        <name>Value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/Actors/ValueIndicatorBox.h" line="31" column="1" bodyfile="EnvSearcher/Actors/ValueIndicatorBox.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_value_indicator_box_1a30dc5ef6bec09fc0bf8600ea3d23264f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AValueIndicatorBox::BaseOpacity</definition>
+        <argsstring></argsstring>
+        <name>BaseOpacity</name>
+        <initializer>= 0.1f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/Actors/ValueIndicatorBox.h" line="34" column="1" bodyfile="EnvSearcher/Actors/ValueIndicatorBox.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_value_indicator_box_1a6873036c631575595f53e74bde9b7708" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AValueIndicatorBox::OpacityMultiplier</definition>
+        <argsstring></argsstring>
+        <name>OpacityMultiplier</name>
+        <initializer>= 0.3f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/Actors/ValueIndicatorBox.h" line="37" column="1" bodyfile="EnvSearcher/Actors/ValueIndicatorBox.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_value_indicator_box_1a1e533340f14bee89f8c741bb8a403ffd" prot="public" static="no" mutable="no">
+        <type>UMaterialInstanceDynamic *</type>
+        <definition>UMaterialInstanceDynamic* AValueIndicatorBox::DynamicMaterial</definition>
+        <argsstring></argsstring>
+        <name>DynamicMaterial</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/Actors/ValueIndicatorBox.h" line="40" column="1" bodyfile="EnvSearcher/Actors/ValueIndicatorBox.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_value_indicator_box_1a7ffd3d45de4fd70dcf82f613081456e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AValueIndicatorBox::AValueIndicatorBox</definition>
+        <argsstring>()</argsstring>
+        <name>AValueIndicatorBox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/Actors/ValueIndicatorBox.h" line="15" column="1" bodyfile="EnvSearcher/Actors/ValueIndicatorBox.cpp" bodystart="7" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_value_indicator_box_1a241df19bbdd8dee5e10734f3f81bacea" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void AValueIndicatorBox::BeginPlay</definition>
+        <argsstring>() override</argsstring>
+        <name>BeginPlay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/Actors/ValueIndicatorBox.h" line="18" column="1" bodyfile="EnvSearcher/Actors/ValueIndicatorBox.cpp" bodystart="21" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_value_indicator_box_1abdffbd5784d61c0a9a3129be3442b8ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void AValueIndicatorBox::Tick</definition>
+        <argsstring>(float DeltaSeconds) override</argsstring>
+        <name>Tick</name>
+        <param>
+          <type>float</type>
+          <declname>DeltaSeconds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/Actors/ValueIndicatorBox.h" line="21" column="1" bodyfile="EnvSearcher/Actors/ValueIndicatorBox.cpp" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_value_indicator_box_1ab467b0ff0834c9d529d259c3ecc24a3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AValueIndicatorBox::SetValue</definition>
+        <argsstring>(float NewValue)</argsstring>
+        <name>SetValue</name>
+        <param>
+          <type>float</type>
+          <declname>NewValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/Actors/ValueIndicatorBox.h" line="43" column="1" bodyfile="EnvSearcher/Actors/ValueIndicatorBox.cpp" bodystart="41" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_value_indicator_box_1adb2643f18a1b694ef932e3df4506ec6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AValueIndicatorBox::GetHeatMapColor</definition>
+        <argsstring>(float HeatValue, float *red, float *green, float *blue)</argsstring>
+        <name>GetHeatMapColor</name>
+        <param>
+          <type>float</type>
+          <declname>HeatValue</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>red</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>green</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>blue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/Actors/ValueIndicatorBox.h" line="45" column="1" bodyfile="EnvSearcher/Actors/ValueIndicatorBox.cpp" bodystart="69" bodyend="91"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="51">
+        <label>AActor</label>
+      </node>
+      <node id="50">
+        <label>AValueIndicatorBox</label>
+        <link refid="class_a_value_indicator_box"/>
+        <childnode refid="51" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="53">
+        <label>AActor</label>
+      </node>
+      <node id="52">
+        <label>AValueIndicatorBox</label>
+        <link refid="class_a_value_indicator_box"/>
+        <childnode refid="53" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="EnvSearcher/Actors/ValueIndicatorBox.h" line="10" column="1" bodyfile="EnvSearcher/Actors/ValueIndicatorBox.h" bodystart="9" bodyend="47"/>
+    <listofallmembers>
+      <member refid="class_a_value_indicator_box_1a7ffd3d45de4fd70dcf82f613081456e9" prot="public" virt="non-virtual"><scope>AValueIndicatorBox</scope><name>AValueIndicatorBox</name></member>
+      <member refid="class_a_value_indicator_box_1a30dc5ef6bec09fc0bf8600ea3d23264f" prot="public" virt="non-virtual"><scope>AValueIndicatorBox</scope><name>BaseOpacity</name></member>
+      <member refid="class_a_value_indicator_box_1a241df19bbdd8dee5e10734f3f81bacea" prot="public" virt="virtual"><scope>AValueIndicatorBox</scope><name>BeginPlay</name></member>
+      <member refid="class_a_value_indicator_box_1a1e533340f14bee89f8c741bb8a403ffd" prot="public" virt="non-virtual"><scope>AValueIndicatorBox</scope><name>DynamicMaterial</name></member>
+      <member refid="class_a_value_indicator_box_1adb2643f18a1b694ef932e3df4506ec6a" prot="public" virt="non-virtual"><scope>AValueIndicatorBox</scope><name>GetHeatMapColor</name></member>
+      <member refid="class_a_value_indicator_box_1ad23d161b269bdeceb0da9776fe6111c3" prot="public" virt="non-virtual"><scope>AValueIndicatorBox</scope><name>Mesh</name></member>
+      <member refid="class_a_value_indicator_box_1a6873036c631575595f53e74bde9b7708" prot="public" virt="non-virtual"><scope>AValueIndicatorBox</scope><name>OpacityMultiplier</name></member>
+      <member refid="class_a_value_indicator_box_1ae6c7d44d2e220ae145b74e4445c148d5" prot="public" virt="non-virtual"><scope>AValueIndicatorBox</scope><name>Scene</name></member>
+      <member refid="class_a_value_indicator_box_1ab467b0ff0834c9d529d259c3ecc24a3d" prot="public" virt="non-virtual"><scope>AValueIndicatorBox</scope><name>SetValue</name></member>
+      <member refid="class_a_value_indicator_box_1abdffbd5784d61c0a9a3129be3442b8ba" prot="public" virt="virtual"><scope>AValueIndicatorBox</scope><name>Tick</name></member>
+      <member refid="class_a_value_indicator_box_1ad0f1870b606426e332c62c8040c9b26b" prot="public" virt="non-virtual"><scope>AValueIndicatorBox</scope><name>Value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

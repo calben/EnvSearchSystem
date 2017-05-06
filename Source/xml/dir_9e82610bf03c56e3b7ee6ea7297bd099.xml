@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_9e82610bf03c56e3b7ee6ea7297bd099" kind="dir">
+    <compoundname>EnvSearcher/SearchSystems</compoundname>
+    <innerdir refid="dir_0df4f0c0c960efbca96cf3387653f885">EnvSearcher/SearchSystems/EnvironmentTesters</innerdir>
+    <innerdir refid="dir_3ccb06d8bc04c7208e62fd652ea4b632">EnvSearcher/SearchSystems/IterativeSearchers</innerdir>
+    <innerfile refid="_environment_search_system_8cpp">EnvironmentSearchSystem.cpp</innerfile>
+    <innerfile refid="_environment_search_system_8h">EnvironmentSearchSystem.h</innerfile>
+    <innerfile refid="_grid_search_system_8cpp">GridSearchSystem.cpp</innerfile>
+    <innerfile refid="_grid_search_system_8h">GridSearchSystem.h</innerfile>
+    <innerfile refid="_point_search_system_8cpp">PointSearchSystem.cpp</innerfile>
+    <innerfile refid="_point_search_system_8h">PointSearchSystem.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="EnvSearcher/SearchSystems/"/>
+  </compounddef>
+</doxygen>

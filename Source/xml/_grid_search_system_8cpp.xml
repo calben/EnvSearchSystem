@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_grid_search_system_8cpp" kind="file" language="C++">
+    <compoundname>GridSearchSystem.cpp</compoundname>
+    <includes refid="_env_searcher_8h" local="yes">EnvSearcher.h</includes>
+    <includes refid="_grid_search_system_8h" local="yes">GridSearchSystem.h</includes>
+    <incdepgraph>
+      <node id="113">
+        <label>EnvironmentSearchSystem.generated.h</label>
+      </node>
+      <node id="106">
+        <label>EnvSearcher.h</label>
+        <link refid="_env_searcher_8h_source"/>
+        <childnode refid="107" relation="include">
+        </childnode>
+      </node>
+      <node id="110">
+        <label>GameFramework/Actor.h</label>
+      </node>
+      <node id="115">
+        <label>GridSearchSystem.generated.h</label>
+      </node>
+      <node id="111">
+        <label>map</label>
+      </node>
+      <node id="108">
+        <label>GridSearchSystem.h</label>
+        <link refid="_grid_search_system_8h_source"/>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+      </node>
+      <node id="109">
+        <label>SearchSystems/EnvironmentSearchSystem.h</label>
+        <link refid="_environment_search_system_8h_source"/>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+      </node>
+      <node id="112">
+        <label>ctime</label>
+      </node>
+      <node id="107">
+        <label>Engine.h</label>
+      </node>
+      <node id="105">
+        <label>EnvSearcher/SearchSystems/GridSearchSystem.cpp</label>
+        <link refid="_grid_search_system_8cpp"/>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+      </node>
+      <node id="114">
+        <label>EnvSearchSystemUtils.h</label>
+        <link refid="_env_search_system_utils_8h_source"/>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Fill<sp/>out<sp/>your<sp/>copyright<sp/>notice<sp/>in<sp/>the<sp/>Description<sp/>page<sp/>of<sp/>Project<sp/>Settings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;EnvSearcher.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;GridSearchSystem.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_a_grid_search_system_1a39d548469787ff67cfa963736ed3c271" kindref="member">AGridSearchSystem::PerformSearch</ref>()</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>EnvSearchSystemUtils::GenerateGrid(GridShape,<sp/>GetActorLocation(),<sp/>GridXCount,<sp/>GridYCount,<sp/>GridZCount,<sp/>GridXSpacing,<sp/>GridYSpacing,<sp/>GridZSpacing,<sp/>&amp;SearchPoints);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>Super::PerformSearch();</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="EnvSearcher/SearchSystems/GridSearchSystem.cpp"/>
+  </compounddef>
+</doxygen>

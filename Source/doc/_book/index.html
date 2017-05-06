@@ -1,0 +1,726 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Introduction · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter active" data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Introduction</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="class-abestsubgridsearchsystem">class <code>ABestSubGridSearchSystem</code></h1>
+<pre><code>class ABestSubGridSearchSystem
+  : public AGridSearchSystem
+</code></pre><h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public int MaximumIterations</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public int MinimumIterations</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public bool bScoreIsError</code></td>
+<td>if your score is error, then 0 is perfect, else you want the highest score</td>
+</tr>
+<tr>
+<td><code>public float GoalScore</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public bool bStopIfGoalReached</code></td>
+<td>stops if the goal is reached unless minimum iterations not reached</td>
+</tr>
+<tr>
+<td><code>public virtual void PerformSearch()</code></td>
+<td>Performs a search at the current location.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public-int-maximumiterations"><code>public int MaximumIterations</code></h4>
+<h4 id="public-int-minimumiterations"><code>public int MinimumIterations</code></h4>
+<h4 id="public-bool-bscoreiserror"><code>public bool bScoreIsError</code></h4>
+<p>if your score is error, then 0 is perfect, else you want the highest score</p>
+<h4 id="public-float-goalscore"><code>public float GoalScore</code></h4>
+<h4 id="public-bool-bstopifgoalreached"><code>public bool bStopIfGoalReached</code></h4>
+<p>stops if the goal is reached unless minimum iterations not reached</p>
+<h4 id="public-virtual-void-performsearch"><code>public virtual void PerformSearch()</code></h4>
+<p>Performs a search at the current location.</p>
+<h1 id="class-adistancetestactor">class <code>ADistanceTestActor</code></h1>
+<pre><code>class ADistanceTestActor
+  : public AEnvironmentTestActor
+</code></pre><h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public AActor * DistanceTestTarget</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual float TestEnvironment()</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public-aactor--distancetesttarget"><code>public AActor * DistanceTestTarget</code></h4>
+<h4 id="public-virtual-float-testenvironment"><code>public virtual float TestEnvironment()</code></h4>
+<h1 id="class-aenvironmentsearchsystem">class <code>AEnvironmentSearchSystem</code></h1>
+<pre><code>class AEnvironmentSearchSystem
+  : public AActor
+</code></pre><h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public USceneComponent * Scene</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public TArray&lt; FVector &gt; SearchPoints</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public bool bDebugMode</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public bool bShowClockTime</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public bool bShowIndicatorBoxes</code></td>
+<td>debugging only. this will more than double runtime</td>
+</tr>
+<tr>
+<td><code>public bool bScaleIndicatorBoxValues</code></td>
+<td>also increases runtime some, but useful unless your algorithm already normalises</td>
+</tr>
+<tr>
+<td><code>public TSubclassOf&lt; class</code><a href="#class_a_value_indicator_box"><code>AValueIndicatorBox</code></a><code>&gt; ValueIndicatorBoxClass</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public std::map&lt; FVector, class</code><a href="#class_a_value_indicator_box">`AValueIndicatorBox</a> *, <a href="#struct_compare_by_vector_string">CompareByVectorString`</a><code>&gt; PointToValueIndicatorMap</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public std::map&lt; FVector, std::map&lt; class</code><a href="#class_a_environment_test_actor">`AEnvironmentTestActor</a> *, float &gt;, <a href="#struct_compare_by_vector_string">CompareByVectorString`</a><code>&gt; PointToTesterToScoreMap</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public std::map&lt; FVector, float,</code><a href="#struct_compare_by_vector_string"><code>CompareByVectorString</code></a><code>&gt; PointToScoreMap</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public std::map&lt; float, FVector &gt; ScoreToPointMap</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public TArray&lt; class</code><a href="#class_a_environment_test_actor"><code>AEnvironmentTestActor</code></a><code>* &gt; TestActors</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public  AEnvironmentSearchSystem()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void BeginPlay()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void Tick(float DeltaSeconds)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void PerformSearch()</code></td>
+<td>Performs a search at the current location.</td>
+</tr>
+<tr>
+<td><code>public void ScaleIndicatorBoxValues()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void GetLowestScoringPoint(FVector * Vector)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void GetHighestScoringPoint(FVector * Vector)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void GetLowestScoringPoint(FVector &amp; VectorOUT)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void GetHighestScoringPoint(FVector &amp; VectorOUT)</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public-uscenecomponent--scene"><code>public USceneComponent * Scene</code></h4>
+<h4 id="public-tarray-fvector--searchpoints"><code>public TArray&lt; FVector &gt; SearchPoints</code></h4>
+<h4 id="public-bool-bdebugmode"><code>public bool bDebugMode</code></h4>
+<h4 id="public-bool-bshowclocktime"><code>public bool bShowClockTime</code></h4>
+<h4 id="public-bool-bshowindicatorboxes"><code>public bool bShowIndicatorBoxes</code></h4>
+<p>debugging only. this will more than double runtime</p>
+<h4 id="public-bool-bscaleindicatorboxvalues"><code>public bool bScaleIndicatorBoxValues</code></h4>
+<p>also increases runtime some, but useful unless your algorithm already normalises</p>
+<h4 id="public-tsubclassof-classavalueindicatorbox-valueindicatorboxclass"><code>public TSubclassOf&lt; class</code><a href="#class_a_value_indicator_box"><code>AValueIndicatorBox</code></a><code>&gt; ValueIndicatorBoxClass</code></h4>
+<h4 id="public-stdmap-fvector-classavalueindicatorbox--comparebyvectorstring-pointtovalueindicatormap"><code>public std::map&lt; FVector, class</code><a href="#class_a_value_indicator_box">`AValueIndicatorBox</a> *, <a href="#struct_compare_by_vector_string">CompareByVectorString`</a><code>&gt; PointToValueIndicatorMap</code></h4>
+<h4 id="public-stdmap-fvector-stdmap-classaenvironmenttestactor--float--comparebyvectorstring-pointtotestertoscoremap"><code>public std::map&lt; FVector, std::map&lt; class</code><a href="#class_a_environment_test_actor">`AEnvironmentTestActor</a> *, float &gt;, <a href="#struct_compare_by_vector_string">CompareByVectorString`</a><code>&gt; PointToTesterToScoreMap</code></h4>
+<h4 id="public-stdmap-fvector-floatcomparebyvectorstring-pointtoscoremap"><code>public std::map&lt; FVector, float,</code><a href="#struct_compare_by_vector_string"><code>CompareByVectorString</code></a><code>&gt; PointToScoreMap</code></h4>
+<h4 id="public-stdmap-float-fvector--scoretopointmap"><code>public std::map&lt; float, FVector &gt; ScoreToPointMap</code></h4>
+<h4 id="public-tarray-classaenvironmenttestactor--testactors"><code>public TArray&lt; class</code><a href="#class_a_environment_test_actor"><code>AEnvironmentTestActor</code></a><code>* &gt; TestActors</code></h4>
+<h4 id="public--aenvironmentsearchsystem"><code>public  AEnvironmentSearchSystem()</code></h4>
+<h4 id="public-virtual-void-beginplay"><code>public virtual void BeginPlay()</code></h4>
+<h4 id="public-virtual-void-tickfloat-deltaseconds"><code>public virtual void Tick(float DeltaSeconds)</code></h4>
+<h4 id="public-virtual-void-performsearch"><code>public virtual void PerformSearch()</code></h4>
+<p>Performs a search at the current location.</p>
+<h4 id="public-void-scaleindicatorboxvalues"><code>public void ScaleIndicatorBoxValues()</code></h4>
+<h4 id="public-void-getlowestscoringpointfvector--vector"><code>public void GetLowestScoringPoint(FVector * Vector)</code></h4>
+<h4 id="public-void-gethighestscoringpointfvector--vector"><code>public void GetHighestScoringPoint(FVector * Vector)</code></h4>
+<h4 id="public-void-getlowestscoringpointfvector--vectorout"><code>public void GetLowestScoringPoint(FVector &amp; VectorOUT)</code></h4>
+<h4 id="public-void-gethighestscoringpointfvector--vectorout"><code>public void GetHighestScoringPoint(FVector &amp; VectorOUT)</code></h4>
+<h1 id="class-aenvironmenttestactor">class <code>AEnvironmentTestActor</code></h1>
+<pre><code>class AEnvironmentTestActor
+  : public AActor
+</code></pre><h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public USceneComponent * Scene</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public float ResultMultiplier</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public  AEnvironmentTestActor()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void BeginPlay()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void Tick(float DeltaSeconds)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual float TestEnvironment()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public float GetScore()</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public-uscenecomponent--scene"><code>public USceneComponent * Scene</code></h4>
+<h4 id="public-float-resultmultiplier"><code>public float ResultMultiplier</code></h4>
+<h4 id="public--aenvironmenttestactor"><code>public  AEnvironmentTestActor()</code></h4>
+<h4 id="public-virtual-void-beginplay"><code>public virtual void BeginPlay()</code></h4>
+<h4 id="public-virtual-void-tickfloat-deltaseconds"><code>public virtual void Tick(float DeltaSeconds)</code></h4>
+<h4 id="public-virtual-float-testenvironment"><code>public virtual float TestEnvironment()</code></h4>
+<h4 id="public-float-getscore"><code>public float GetScore()</code></h4>
+<h1 id="class-aenvsearchergamemodebase">class <code>AEnvSearcherGameModeBase</code></h1>
+<pre><code>class AEnvSearcherGameModeBase
+  : public AGameModeBase
+</code></pre><h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h1 id="class-agridsearchsystem">class <code>AGridSearchSystem</code></h1>
+<pre><code>class AGridSearchSystem
+  : public AEnvironmentSearchSystem
+</code></pre><h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public EGridShape GridShape</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public float GridXCount</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public float GridYCount</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public float GridZCount</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public float GridXSpacing</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public float GridYSpacing</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public float GridZSpacing</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void PerformSearch()</code></td>
+<td>Performs a search at the current location.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public-egridshape-gridshape"><code>public EGridShape GridShape</code></h4>
+<h4 id="public-float-gridxcount"><code>public float GridXCount</code></h4>
+<h4 id="public-float-gridycount"><code>public float GridYCount</code></h4>
+<h4 id="public-float-gridzcount"><code>public float GridZCount</code></h4>
+<h4 id="public-float-gridxspacing"><code>public float GridXSpacing</code></h4>
+<h4 id="public-float-gridyspacing"><code>public float GridYSpacing</code></h4>
+<h4 id="public-float-gridzspacing"><code>public float GridZSpacing</code></h4>
+<h4 id="public-virtual-void-performsearch"><code>public virtual void PerformSearch()</code></h4>
+<p>Performs a search at the current location.</p>
+<h1 id="class-apointsearchsystem">class <code>APointSearchSystem</code></h1>
+<pre><code>class APointSearchSystem
+  : public AEnvironmentSearchSystem
+</code></pre><h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h1 id="class-atracetestactor">class <code>ATraceTestActor</code></h1>
+<pre><code>class ATraceTestActor
+  : public AEnvironmentTestActor
+</code></pre><h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public AActor * TraceTestTarget</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public FVector TraceLocationOverride</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public AActor * BlockingActor</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public bool bShowLineTraceDebug</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public bool bTraceToLocationOverride</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public TEnumAsByte&lt; ECollisionChannel &gt; TraceChannel</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public FCollisionQueryParams Params</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public FCollisionResponseParams ResponseParam</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual float TestEnvironment()</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public-aactor--tracetesttarget"><code>public AActor * TraceTestTarget</code></h4>
+<h4 id="public-fvector-tracelocationoverride"><code>public FVector TraceLocationOverride</code></h4>
+<h4 id="public-aactor--blockingactor"><code>public AActor * BlockingActor</code></h4>
+<h4 id="public-bool-bshowlinetracedebug"><code>public bool bShowLineTraceDebug</code></h4>
+<h4 id="public-bool-btracetolocationoverride"><code>public bool bTraceToLocationOverride</code></h4>
+<h4 id="public-tenumasbyte-ecollisionchannel--tracechannel"><code>public TEnumAsByte&lt; ECollisionChannel &gt; TraceChannel</code></h4>
+<h4 id="public-fcollisionqueryparams-params"><code>public FCollisionQueryParams Params</code></h4>
+<h4 id="public-fcollisionresponseparams-responseparam"><code>public FCollisionResponseParams ResponseParam</code></h4>
+<h4 id="public-virtual-float-testenvironment"><code>public virtual float TestEnvironment()</code></h4>
+<h1 id="class-avalueindicatorbox">class <code>AValueIndicatorBox</code></h1>
+<pre><code>class AValueIndicatorBox
+  : public AActor
+</code></pre><h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public USceneComponent * Scene</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public UStaticMeshComponent * Mesh</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public float Value</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public float BaseOpacity</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public float OpacityMultiplier</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public UMaterialInstanceDynamic * DynamicMaterial</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public  AValueIndicatorBox()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void BeginPlay()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public virtual void Tick(float DeltaSeconds)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void SetValue(float NewValue)</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public void GetHeatMapColor(float HeatValue,float * red,float * green,float * blue)</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public-uscenecomponent--scene"><code>public USceneComponent * Scene</code></h4>
+<h4 id="public-ustaticmeshcomponent--mesh"><code>public UStaticMeshComponent * Mesh</code></h4>
+<h4 id="public-float-value"><code>public float Value</code></h4>
+<h4 id="public-float-baseopacity"><code>public float BaseOpacity</code></h4>
+<h4 id="public-float-opacitymultiplier"><code>public float OpacityMultiplier</code></h4>
+<h4 id="public-umaterialinstancedynamic--dynamicmaterial"><code>public UMaterialInstanceDynamic * DynamicMaterial</code></h4>
+<h4 id="public--avalueindicatorbox"><code>public  AValueIndicatorBox()</code></h4>
+<h4 id="public-virtual-void-beginplay"><code>public virtual void BeginPlay()</code></h4>
+<h4 id="public-virtual-void-tickfloat-deltaseconds"><code>public virtual void Tick(float DeltaSeconds)</code></h4>
+<h4 id="public-void-setvaluefloat-newvalue"><code>public void SetValue(float NewValue)</code></h4>
+<h4 id="public-void-getheatmapcolorfloat-heatvaluefloat--redfloat--greenfloat--blue"><code>public void GetHeatMapColor(float HeatValue,float * red,float * green,float * blue)</code></h4>
+<h1 id="class-envsearchsystemutils">class <code>EnvSearchSystemUtils</code></h1>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public  EnvSearchSystemUtils()</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>public  ~EnvSearchSystemUtils()</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public--envsearchsystemutils"><code>public  EnvSearchSystemUtils()</code></h4>
+<h4 id="public--envsearchsystemutils"><code>public  ~EnvSearchSystemUtils()</code></h4>
+<h1 id="struct-comparebyvectorstring">struct <code>CompareByVectorString</code></h1>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Members</th>
+<th>Descriptions                                </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>public inline bool operator()(const FVector a,const FVector b) const</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="members">Members</h2>
+<h4 id="public-inline-bool-operatorconst-fvector-aconst-fvector-b-const"><code>public inline bool operator()(const FVector a,const FVector b) const</code></h4>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2017-04-01T20:28:28.160Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-01T20:30:13.272Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

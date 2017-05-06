@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_a_best_sub_grid_search_system" kind="class" language="C++" prot="public">
+    <compoundname>ABestSubGridSearchSystem</compoundname>
+    <basecompoundref refid="class_a_grid_search_system" prot="public" virt="non-virtual">AGridSearchSystem</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_a_best_sub_grid_search_system_1adc279d9e2ef711b509299e1369768252" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ABestSubGridSearchSystem::MaximumIterations</definition>
+        <argsstring></argsstring>
+        <name>MaximumIterations</name>
+        <initializer>= 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/IterativeSearchers/BestSubGridSearchSystem.h" line="19" column="1" bodyfile="EnvSearcher/SearchSystems/IterativeSearchers/BestSubGridSearchSystem.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_best_sub_grid_search_system_1a50a389388a7d692d44b5fbc92ef019ee" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ABestSubGridSearchSystem::MinimumIterations</definition>
+        <argsstring></argsstring>
+        <name>MinimumIterations</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/IterativeSearchers/BestSubGridSearchSystem.h" line="22" column="1" bodyfile="EnvSearcher/SearchSystems/IterativeSearchers/BestSubGridSearchSystem.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_best_sub_grid_search_system_1a704a18c04a04f4cff7b75010e46066d1" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ABestSubGridSearchSystem::bScoreIsError</definition>
+        <argsstring></argsstring>
+        <name>bScoreIsError</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>if your score is error, then 0 is perfect, else you want the highest score </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/IterativeSearchers/BestSubGridSearchSystem.h" line="25" column="1" bodyfile="EnvSearcher/SearchSystems/IterativeSearchers/BestSubGridSearchSystem.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_best_sub_grid_search_system_1a27b6dcacd904f983b17754e6034525bf" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ABestSubGridSearchSystem::GoalScore</definition>
+        <argsstring></argsstring>
+        <name>GoalScore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/IterativeSearchers/BestSubGridSearchSystem.h" line="28" column="1" bodyfile="EnvSearcher/SearchSystems/IterativeSearchers/BestSubGridSearchSystem.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_best_sub_grid_search_system_1a961a1fca625bc22d72e17bbd8214a49a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ABestSubGridSearchSystem::bStopIfGoalReached</definition>
+        <argsstring></argsstring>
+        <name>bStopIfGoalReached</name>
+        <briefdescription>
+<para>stops if the goal is reached unless minimum iterations not reached </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/IterativeSearchers/BestSubGridSearchSystem.h" line="31" column="1" bodyfile="EnvSearcher/SearchSystems/IterativeSearchers/BestSubGridSearchSystem.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_best_sub_grid_search_system_1a80cf198086edfa0ef24a1c5de5c6ff9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ABestSubGridSearchSystem::PerformSearch</definition>
+        <argsstring>() override</argsstring>
+        <name>PerformSearch</name>
+        <reimplements refid="class_a_grid_search_system_1a39d548469787ff67cfa963736ed3c271">PerformSearch</reimplements>
+        <briefdescription>
+<para>Performs a search at the current location. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/IterativeSearchers/BestSubGridSearchSystem.h" line="34" column="1" bodyfile="EnvSearcher/SearchSystems/IterativeSearchers/BestSubGridSearchSystem.cpp" bodystart="7" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AEnvironmentSearchSystem</label>
+        <link refid="class_a_environment_search_system"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AActor</label>
+      </node>
+      <node id="0">
+        <label>ABestSubGridSearchSystem</label>
+        <link refid="class_a_best_sub_grid_search_system"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>AGridSearchSystem</label>
+        <link refid="class_a_grid_search_system"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>AEnvironmentSearchSystem</label>
+        <link refid="class_a_environment_search_system"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>AActor</label>
+      </node>
+      <node id="4">
+        <label>ABestSubGridSearchSystem</label>
+        <link refid="class_a_best_sub_grid_search_system"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>AGridSearchSystem</label>
+        <link refid="class_a_grid_search_system"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="EnvSearcher/SearchSystems/IterativeSearchers/BestSubGridSearchSystem.h" line="13" column="1" bodyfile="EnvSearcher/SearchSystems/IterativeSearchers/BestSubGridSearchSystem.h" bodystart="12" bodyend="36"/>
+    <listofallmembers>
+      <member refid="class_a_environment_search_system_1a52a2902ecd5195065dea44cb3ea95abb" prot="public" virt="non-virtual"><scope>ABestSubGridSearchSystem</scope><name>AEnvironmentSearchSystem</name></member>
+      <member refid="class_a_environment_search_system_1a616c480011cab015dd830fd852419206" prot="public" virt="non-virtual"><scope>ABestSubGridSearchSystem</scope><name>bDebugMode</name></member>
+      <member refid="class_a_environment_search_system_1a2e8839a3070f6c1da1af28adf870e4d0" prot="public" virt="virtual"><scope>ABestSubGridSearchSystem</scope><name>BeginPlay</name></member>
+      <member refid="class_a_environment_search_system_1a5abdf57c9d9c425387b77f8c93b3d07f" prot="public" virt="non-virtual"><scope>ABestSubGridSearchSystem</scope><name>bScaleIndicatorBoxValues</name></member>
+      <member refid="class_a_best_sub_grid_search_system_1a704a18c04a04f4cff7b75010e46066d1" prot="public" virt="non-virtual"><scope>ABestSubGridSearchSystem</scope><name>bScoreIsError</name></member>
+      <member refid="class_a_environment_search_system_1a672c9b7613503b65aef96d591188b002" prot="public" virt="non-virtual"><scope>ABestSubGridSearchSystem</scope><name>bShowClockTime</name></member>
+      <member refid="class_a_environment_search_system_1a25aefcb32532d14d68ca67290f94bbef" prot="public" virt="non-virtual"><scope>ABestSubGridSearchSystem</scope><name>bShowIndicatorBoxes</name></member>
+      <member refid="class_a_best_sub_grid_search_system_1a961a1fca625bc22d72e17bbd8214a49a" prot="public" virt="non-virtual"><scope>ABestSubGridSearchSystem</scope><name>bStopIfGoalReached</name></member>
+      <member refid="class_a_environment_search_system_1afd4e7468511d11a80f1bb5c1b597c411" prot="public" virt="non-virtual"><scope>ABestSubGridSearchSystem</scope><name>GetHighestScoringPoint</name></member>
+      <member refid="class_a_environment_search_system_1a4c74de48fcb84e22a785b0c1e9706451" prot="public" virt="non-virtual"><scope>ABestSubGridSearchSystem</scope><name>GetHighestScoringPoint</name></member>
+      <member refid="class_a_environment_search_system_1a6747d34fceaf48b0d737d94830825122" prot="public" virt="non-virtual"><scope>ABestSubGridSearchSystem</scope><name>GetLowestScoringPoint</name></member>
+      <member refid="class_a_environment_search_system_1a182b4589433aa0a782f83c9daa5db5e1" prot="public" virt="non-virtual"><scope>ABestSubGridSearchSystem</scope><name>GetLowestScoringPoint</name></member>
+      <member refid="class_a_best_sub_grid_search_system_1a27b6dcacd904f983b17754e6034525bf" prot="public" virt="non-virtual"><scope>ABestSubGridSearchSystem</scope><name>GoalScore</name></member>
+      <member refid="class_a_grid_search_system_1ac9999f951acb24b1fe05cac6c0b443aa" prot="public" virt="non-virtual"><scope>ABestSubGridSearchSystem</scope><name>GridShape</name></member>
+      <member refid="class_a_grid_search_system_1a2b1ee04620c8dad76b6d69f92e492795" prot="public" virt="non-virtual"><scope>ABestSubGridSearchSystem</scope><name>GridXCount</name></member>
+      <member refid="class_a_grid_search_system_1a1fb0a7b5cd7bf59bd583340a7cbe1655" prot="public" virt="non-virtual"><scope>ABestSubGridSearchSystem</scope><name>GridXSpacing</name></member>
+      <member refid="class_a_grid_search_system_1a73b54c667352b1166298b120cddb137d" prot="public" virt="non-virtual"><scope>ABestSubGridSearchSystem</scope><name>GridYCount</name></member>
+      <member refid="class_a_grid_search_system_1a3f5da0cbd167ad70373409792d11285e" prot="public" virt="non-virtual"><scope>ABestSubGridSearchSystem</scope><name>GridYSpacing</name></member>
+      <member refid="class_a_grid_search_system_1ad322dc62610caa0df03cdb938fe87aee" prot="public" virt="non-virtual"><scope>ABestSubGridSearchSystem</scope><name>GridZCount</name></member>
+      <member refid="class_a_grid_search_system_1a8795a1d9083d06bf71fb1b6e607eafba" prot="public" virt="non-virtual"><scope>ABestSubGridSearchSystem</scope><name>GridZSpacing</name></member>
+      <member refid="class_a_best_sub_grid_search_system_1adc279d9e2ef711b509299e1369768252" prot="public" virt="non-virtual"><scope>ABestSubGridSearchSystem</scope><name>MaximumIterations</name></member>
+      <member refid="class_a_best_sub_grid_search_system_1a50a389388a7d692d44b5fbc92ef019ee" prot="public" virt="non-virtual"><scope>ABestSubGridSearchSystem</scope><name>MinimumIterations</name></member>
+      <member refid="class_a_best_sub_grid_search_system_1a80cf198086edfa0ef24a1c5de5c6ff9d" prot="public" virt="virtual"><scope>ABestSubGridSearchSystem</scope><name>PerformSearch</name></member>
+      <member refid="class_a_environment_search_system_1a75328c6940bcd69545cc3595c9e8b49f" prot="public" virt="non-virtual"><scope>ABestSubGridSearchSystem</scope><name>PointToScoreMap</name></member>
+      <member refid="class_a_environment_search_system_1ac43f3a540a94c64e9c5d9212075482ff" prot="public" virt="non-virtual"><scope>ABestSubGridSearchSystem</scope><name>PointToTesterToScoreMap</name></member>
+      <member refid="class_a_environment_search_system_1a58d68a194ba7e81073899e7a8c5815bd" prot="public" virt="non-virtual"><scope>ABestSubGridSearchSystem</scope><name>PointToValueIndicatorMap</name></member>
+      <member refid="class_a_environment_search_system_1a5da883e1bfcb337a4de1b2c8441e1a78" prot="public" virt="non-virtual"><scope>ABestSubGridSearchSystem</scope><name>ScaleIndicatorBoxValues</name></member>
+      <member refid="class_a_environment_search_system_1a8493b3ead5a9920189cfc32ac664a544" prot="public" virt="non-virtual"><scope>ABestSubGridSearchSystem</scope><name>Scene</name></member>
+      <member refid="class_a_environment_search_system_1affd5cdac03d40fde06fae4346cc236a1" prot="public" virt="non-virtual"><scope>ABestSubGridSearchSystem</scope><name>ScorePoints</name></member>
+      <member refid="class_a_environment_search_system_1acde5d1baca6348eebd53d18f09e7fbd4" prot="public" virt="non-virtual"><scope>ABestSubGridSearchSystem</scope><name>ScoreToPointMap</name></member>
+      <member refid="class_a_environment_search_system_1a58d6b658eedc8c6a8cb23ea34aaf063f" prot="public" virt="non-virtual"><scope>ABestSubGridSearchSystem</scope><name>SearchPoints</name></member>
+      <member refid="class_a_environment_search_system_1aadc73681064fd1d9ceeea6ee1519892b" prot="public" virt="non-virtual"><scope>ABestSubGridSearchSystem</scope><name>SpawnIndicatorBoxes</name></member>
+      <member refid="class_a_environment_search_system_1a62822fdb21a299bed41177034b8344e1" prot="public" virt="non-virtual"><scope>ABestSubGridSearchSystem</scope><name>TestActors</name></member>
+      <member refid="class_a_environment_search_system_1aff63d054a27b8e45e999533e0c5e0f0f" prot="public" virt="virtual"><scope>ABestSubGridSearchSystem</scope><name>Tick</name></member>
+      <member refid="class_a_environment_search_system_1a1b668edb5d5a912e06d1ccab18821d1c" prot="public" virt="non-virtual"><scope>ABestSubGridSearchSystem</scope><name>ValueIndicatorBoxClass</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

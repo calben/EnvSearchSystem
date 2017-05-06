@@ -1,0 +1,446 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_a_environment_search_system" kind="class" language="C++" prot="public">
+    <compoundname>AEnvironmentSearchSystem</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">AActor</basecompoundref>
+    <derivedcompoundref refid="class_a_grid_search_system" prot="public" virt="non-virtual">AGridSearchSystem</derivedcompoundref>
+    <derivedcompoundref refid="class_a_point_search_system" prot="public" virt="non-virtual">APointSearchSystem</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_a_environment_search_system_1a8493b3ead5a9920189cfc32ac664a544" prot="public" static="no" mutable="no">
+        <type>USceneComponent *</type>
+        <definition>USceneComponent* AEnvironmentSearchSystem::Scene</definition>
+        <argsstring></argsstring>
+        <name>Scene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/EnvironmentSearchSystem.h" line="44" column="1" bodyfile="EnvSearcher/SearchSystems/EnvironmentSearchSystem.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_environment_search_system_1a58d6b658eedc8c6a8cb23ea34aaf063f" prot="public" static="no" mutable="no">
+        <type>TArray&lt; FVector &gt;</type>
+        <definition>TArray&lt;FVector&gt; AEnvironmentSearchSystem::SearchPoints</definition>
+        <argsstring></argsstring>
+        <name>SearchPoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/EnvironmentSearchSystem.h" line="47" column="1" bodyfile="EnvSearcher/SearchSystems/EnvironmentSearchSystem.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_environment_search_system_1a616c480011cab015dd830fd852419206" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AEnvironmentSearchSystem::bDebugMode</definition>
+        <argsstring></argsstring>
+        <name>bDebugMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/EnvironmentSearchSystem.h" line="50" column="1" bodyfile="EnvSearcher/SearchSystems/EnvironmentSearchSystem.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_environment_search_system_1a672c9b7613503b65aef96d591188b002" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AEnvironmentSearchSystem::bShowClockTime</definition>
+        <argsstring></argsstring>
+        <name>bShowClockTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/EnvironmentSearchSystem.h" line="53" column="1" bodyfile="EnvSearcher/SearchSystems/EnvironmentSearchSystem.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_environment_search_system_1a25aefcb32532d14d68ca67290f94bbef" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AEnvironmentSearchSystem::bShowIndicatorBoxes</definition>
+        <argsstring></argsstring>
+        <name>bShowIndicatorBoxes</name>
+        <briefdescription>
+<para>debugging only. this will more than double runtime </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/EnvironmentSearchSystem.h" line="56" column="1" bodyfile="EnvSearcher/SearchSystems/EnvironmentSearchSystem.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_environment_search_system_1a5abdf57c9d9c425387b77f8c93b3d07f" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AEnvironmentSearchSystem::bScaleIndicatorBoxValues</definition>
+        <argsstring></argsstring>
+        <name>bScaleIndicatorBoxValues</name>
+        <briefdescription>
+<para>also increases runtime some, but useful unless your algorithm already normalises </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/EnvironmentSearchSystem.h" line="59" column="1" bodyfile="EnvSearcher/SearchSystems/EnvironmentSearchSystem.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_environment_search_system_1a1b668edb5d5a912e06d1ccab18821d1c" prot="public" static="no" mutable="no">
+        <type>TSubclassOf&lt; class <ref refid="class_a_value_indicator_box" kindref="compound">AValueIndicatorBox</ref> &gt;</type>
+        <definition>TSubclassOf&lt;class AValueIndicatorBox&gt; AEnvironmentSearchSystem::ValueIndicatorBoxClass</definition>
+        <argsstring></argsstring>
+        <name>ValueIndicatorBoxClass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/EnvironmentSearchSystem.h" line="62" column="1" bodyfile="EnvSearcher/SearchSystems/EnvironmentSearchSystem.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_environment_search_system_1a58d68a194ba7e81073899e7a8c5815bd" prot="public" static="no" mutable="no">
+        <type>std::map&lt; FVector, class <ref refid="class_a_value_indicator_box" kindref="compound">AValueIndicatorBox</ref> *, <ref refid="struct_compare_by_vector_string" kindref="compound">CompareByVectorString</ref> &gt;</type>
+        <definition>std::map&lt;FVector, class AValueIndicatorBox *, CompareByVectorString&gt; AEnvironmentSearchSystem::PointToValueIndicatorMap</definition>
+        <argsstring></argsstring>
+        <name>PointToValueIndicatorMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/EnvironmentSearchSystem.h" line="64" column="1" bodyfile="EnvSearcher/SearchSystems/EnvironmentSearchSystem.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_environment_search_system_1ac43f3a540a94c64e9c5d9212075482ff" prot="public" static="no" mutable="no">
+        <type>std::map&lt; FVector, std::map&lt; class <ref refid="class_a_environment_test_actor" kindref="compound">AEnvironmentTestActor</ref> *, float &gt;, <ref refid="struct_compare_by_vector_string" kindref="compound">CompareByVectorString</ref> &gt;</type>
+        <definition>std::map&lt;FVector, std::map&lt;class AEnvironmentTestActor *, float&gt;, CompareByVectorString&gt; AEnvironmentSearchSystem::PointToTesterToScoreMap</definition>
+        <argsstring></argsstring>
+        <name>PointToTesterToScoreMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/EnvironmentSearchSystem.h" line="66" column="1" bodyfile="EnvSearcher/SearchSystems/EnvironmentSearchSystem.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_environment_search_system_1a75328c6940bcd69545cc3595c9e8b49f" prot="public" static="no" mutable="no">
+        <type>std::map&lt; FVector, float, <ref refid="struct_compare_by_vector_string" kindref="compound">CompareByVectorString</ref> &gt;</type>
+        <definition>std::map&lt;FVector, float, CompareByVectorString&gt; AEnvironmentSearchSystem::PointToScoreMap</definition>
+        <argsstring></argsstring>
+        <name>PointToScoreMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/EnvironmentSearchSystem.h" line="69" column="1" bodyfile="EnvSearcher/SearchSystems/EnvironmentSearchSystem.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_environment_search_system_1acde5d1baca6348eebd53d18f09e7fbd4" prot="public" static="no" mutable="no">
+        <type>std::map&lt; float, FVector &gt;</type>
+        <definition>std::map&lt;float, FVector&gt; AEnvironmentSearchSystem::ScoreToPointMap</definition>
+        <argsstring></argsstring>
+        <name>ScoreToPointMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/EnvironmentSearchSystem.h" line="71" column="1" bodyfile="EnvSearcher/SearchSystems/EnvironmentSearchSystem.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_environment_search_system_1a62822fdb21a299bed41177034b8344e1" prot="public" static="no" mutable="no">
+        <type>TArray&lt; class <ref refid="class_a_environment_test_actor" kindref="compound">AEnvironmentTestActor</ref> * &gt;</type>
+        <definition>TArray&lt;class AEnvironmentTestActor *&gt; AEnvironmentSearchSystem::TestActors</definition>
+        <argsstring></argsstring>
+        <name>TestActors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/EnvironmentSearchSystem.h" line="74" column="1" bodyfile="EnvSearcher/SearchSystems/EnvironmentSearchSystem.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_environment_search_system_1a52a2902ecd5195065dea44cb3ea95abb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AEnvironmentSearchSystem::AEnvironmentSearchSystem</definition>
+        <argsstring>()</argsstring>
+        <name>AEnvironmentSearchSystem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/EnvironmentSearchSystem.h" line="37" column="1" bodyfile="EnvSearcher/SearchSystems/EnvironmentSearchSystem.cpp" bodystart="9" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_environment_search_system_1a2e8839a3070f6c1da1af28adf870e4d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void AEnvironmentSearchSystem::BeginPlay</definition>
+        <argsstring>() override</argsstring>
+        <name>BeginPlay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/EnvironmentSearchSystem.h" line="39" column="1" bodyfile="EnvSearcher/SearchSystems/EnvironmentSearchSystem.cpp" bodystart="17" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_environment_search_system_1aff63d054a27b8e45e999533e0c5e0f0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void AEnvironmentSearchSystem::Tick</definition>
+        <argsstring>(float DeltaSeconds) override</argsstring>
+        <name>Tick</name>
+        <param>
+          <type>float</type>
+          <declname>DeltaSeconds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/EnvironmentSearchSystem.h" line="41" column="1" bodyfile="EnvSearcher/SearchSystems/EnvironmentSearchSystem.cpp" bodystart="24" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_environment_search_system_1a65322d27f18850e563e7e9d132c2d528" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void AEnvironmentSearchSystem::PerformSearch</definition>
+        <argsstring>()</argsstring>
+        <name>PerformSearch</name>
+        <reimplementedby refid="class_a_best_sub_grid_search_system_1a80cf198086edfa0ef24a1c5de5c6ff9d">PerformSearch</reimplementedby>
+        <reimplementedby refid="class_a_grid_search_system_1a39d548469787ff67cfa963736ed3c271">PerformSearch</reimplementedby>
+        <briefdescription>
+<para>Performs a search at the current location. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/EnvironmentSearchSystem.h" line="77" column="1" bodyfile="EnvSearcher/SearchSystems/EnvironmentSearchSystem.cpp" bodystart="30" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_environment_search_system_1a5da883e1bfcb337a4de1b2c8441e1a78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AEnvironmentSearchSystem::ScaleIndicatorBoxValues</definition>
+        <argsstring>()</argsstring>
+        <name>ScaleIndicatorBoxValues</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/EnvironmentSearchSystem.h" line="80" column="1" bodyfile="EnvSearcher/SearchSystems/EnvironmentSearchSystem.cpp" bodystart="50" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_environment_search_system_1a6747d34fceaf48b0d737d94830825122" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AEnvironmentSearchSystem::GetLowestScoringPoint</definition>
+        <argsstring>(FVector *Vector)</argsstring>
+        <name>GetLowestScoringPoint</name>
+        <param>
+          <type>FVector *</type>
+          <declname>Vector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/EnvironmentSearchSystem.h" line="82" column="1" bodyfile="EnvSearcher/SearchSystems/EnvironmentSearchSystem.cpp" bodystart="72" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_environment_search_system_1afd4e7468511d11a80f1bb5c1b597c411" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AEnvironmentSearchSystem::GetHighestScoringPoint</definition>
+        <argsstring>(FVector *Vector)</argsstring>
+        <name>GetHighestScoringPoint</name>
+        <param>
+          <type>FVector *</type>
+          <declname>Vector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/EnvironmentSearchSystem.h" line="84" column="1" bodyfile="EnvSearcher/SearchSystems/EnvironmentSearchSystem.cpp" bodystart="80" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_environment_search_system_1a182b4589433aa0a782f83c9daa5db5e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AEnvironmentSearchSystem::GetLowestScoringPoint</definition>
+        <argsstring>(FVector &amp;VectorOUT)</argsstring>
+        <name>GetLowestScoringPoint</name>
+        <param>
+          <type>FVector &amp;</type>
+          <declname>VectorOUT</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/EnvironmentSearchSystem.h" line="87" column="1" bodyfile="EnvSearcher/SearchSystems/EnvironmentSearchSystem.cpp" bodystart="89" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_environment_search_system_1a4c74de48fcb84e22a785b0c1e9706451" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AEnvironmentSearchSystem::GetHighestScoringPoint</definition>
+        <argsstring>(FVector &amp;VectorOUT)</argsstring>
+        <name>GetHighestScoringPoint</name>
+        <param>
+          <type>FVector &amp;</type>
+          <declname>VectorOUT</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/EnvironmentSearchSystem.h" line="90" column="1" bodyfile="EnvSearcher/SearchSystems/EnvironmentSearchSystem.cpp" bodystart="97" bodyend="103"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_a_environment_search_system_1aadc73681064fd1d9ceeea6ee1519892b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AEnvironmentSearchSystem::SpawnIndicatorBoxes</definition>
+        <argsstring>(AActor *Parent, std::map&lt; FVector, float, CompareByVectorString &gt; *PointToScoreMap, TSubclassOf&lt; class AValueIndicatorBox &gt; ValueIndicatorBoxClass, std::map&lt; FVector, class AValueIndicatorBox *, CompareByVectorString &gt; *PointToValueIndicatorMap)</argsstring>
+        <name>SpawnIndicatorBoxes</name>
+        <param>
+          <type>AActor *</type>
+          <declname>Parent</declname>
+        </param>
+        <param>
+          <type>std::map&lt; FVector, float, <ref refid="struct_compare_by_vector_string" kindref="compound">CompareByVectorString</ref> &gt; *</type>
+          <declname>PointToScoreMap</declname>
+        </param>
+        <param>
+          <type>TSubclassOf&lt; class <ref refid="class_a_value_indicator_box" kindref="compound">AValueIndicatorBox</ref> &gt;</type>
+          <declname>ValueIndicatorBoxClass</declname>
+        </param>
+        <param>
+          <type>std::map&lt; FVector, class <ref refid="class_a_value_indicator_box" kindref="compound">AValueIndicatorBox</ref> *, <ref refid="struct_compare_by_vector_string" kindref="compound">CompareByVectorString</ref> &gt; *</type>
+          <declname>PointToValueIndicatorMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/EnvironmentSearchSystem.h" line="92" column="1" bodyfile="EnvSearcher/SearchSystems/EnvironmentSearchSystem.cpp" bodystart="105" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_environment_search_system_1affd5cdac03d40fde06fae4346cc236a1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AEnvironmentSearchSystem::ScorePoints</definition>
+        <argsstring>(TArray&lt; AEnvironmentTestActor *&gt; *TestActors, TArray&lt; FVector &gt; *Points, std::map&lt; FVector, std::map&lt; class AEnvironmentTestActor *, float &gt;, CompareByVectorString &gt; *PointToTesterToScoreMap, std::map&lt; FVector, float, CompareByVectorString &gt; *PointToScoreMap, std::map&lt; float, FVector &gt; *ScoreToPointMap, bool bDebugMode)</argsstring>
+        <name>ScorePoints</name>
+        <param>
+          <type>TArray&lt; <ref refid="class_a_environment_test_actor" kindref="compound">AEnvironmentTestActor</ref> *&gt; *</type>
+          <declname>TestActors</declname>
+        </param>
+        <param>
+          <type>TArray&lt; FVector &gt; *</type>
+          <declname>Points</declname>
+        </param>
+        <param>
+          <type>std::map&lt; FVector, std::map&lt; class <ref refid="class_a_environment_test_actor" kindref="compound">AEnvironmentTestActor</ref> *, float &gt;, <ref refid="struct_compare_by_vector_string" kindref="compound">CompareByVectorString</ref> &gt; *</type>
+          <declname>PointToTesterToScoreMap</declname>
+        </param>
+        <param>
+          <type>std::map&lt; FVector, float, <ref refid="struct_compare_by_vector_string" kindref="compound">CompareByVectorString</ref> &gt; *</type>
+          <declname>PointToScoreMap</declname>
+        </param>
+        <param>
+          <type>std::map&lt; float, FVector &gt; *</type>
+          <declname>ScoreToPointMap</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bDebugMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/EnvironmentSearchSystem.h" line="94" column="1" bodyfile="EnvSearcher/SearchSystems/EnvironmentSearchSystem.cpp" bodystart="120" bodyend="153"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="14">
+        <label>AEnvironmentSearchSystem</label>
+        <link refid="class_a_environment_search_system"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>AActor</label>
+      </node>
+      <node id="18">
+        <label>APointSearchSystem</label>
+        <link refid="class_a_point_search_system"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>ABestSubGridSearchSystem</label>
+        <link refid="class_a_best_sub_grid_search_system"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>AGridSearchSystem</label>
+        <link refid="class_a_grid_search_system"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="19">
+        <label>AEnvironmentSearchSystem</label>
+        <link refid="class_a_environment_search_system"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>AActor</label>
+      </node>
+    </collaborationgraph>
+    <location file="EnvSearcher/SearchSystems/EnvironmentSearchSystem.h" line="33" column="1" bodyfile="EnvSearcher/SearchSystems/EnvironmentSearchSystem.h" bodystart="32" bodyend="95"/>
+    <listofallmembers>
+      <member refid="class_a_environment_search_system_1a52a2902ecd5195065dea44cb3ea95abb" prot="public" virt="non-virtual"><scope>AEnvironmentSearchSystem</scope><name>AEnvironmentSearchSystem</name></member>
+      <member refid="class_a_environment_search_system_1a616c480011cab015dd830fd852419206" prot="public" virt="non-virtual"><scope>AEnvironmentSearchSystem</scope><name>bDebugMode</name></member>
+      <member refid="class_a_environment_search_system_1a2e8839a3070f6c1da1af28adf870e4d0" prot="public" virt="virtual"><scope>AEnvironmentSearchSystem</scope><name>BeginPlay</name></member>
+      <member refid="class_a_environment_search_system_1a5abdf57c9d9c425387b77f8c93b3d07f" prot="public" virt="non-virtual"><scope>AEnvironmentSearchSystem</scope><name>bScaleIndicatorBoxValues</name></member>
+      <member refid="class_a_environment_search_system_1a672c9b7613503b65aef96d591188b002" prot="public" virt="non-virtual"><scope>AEnvironmentSearchSystem</scope><name>bShowClockTime</name></member>
+      <member refid="class_a_environment_search_system_1a25aefcb32532d14d68ca67290f94bbef" prot="public" virt="non-virtual"><scope>AEnvironmentSearchSystem</scope><name>bShowIndicatorBoxes</name></member>
+      <member refid="class_a_environment_search_system_1afd4e7468511d11a80f1bb5c1b597c411" prot="public" virt="non-virtual"><scope>AEnvironmentSearchSystem</scope><name>GetHighestScoringPoint</name></member>
+      <member refid="class_a_environment_search_system_1a4c74de48fcb84e22a785b0c1e9706451" prot="public" virt="non-virtual"><scope>AEnvironmentSearchSystem</scope><name>GetHighestScoringPoint</name></member>
+      <member refid="class_a_environment_search_system_1a6747d34fceaf48b0d737d94830825122" prot="public" virt="non-virtual"><scope>AEnvironmentSearchSystem</scope><name>GetLowestScoringPoint</name></member>
+      <member refid="class_a_environment_search_system_1a182b4589433aa0a782f83c9daa5db5e1" prot="public" virt="non-virtual"><scope>AEnvironmentSearchSystem</scope><name>GetLowestScoringPoint</name></member>
+      <member refid="class_a_environment_search_system_1a65322d27f18850e563e7e9d132c2d528" prot="public" virt="virtual"><scope>AEnvironmentSearchSystem</scope><name>PerformSearch</name></member>
+      <member refid="class_a_environment_search_system_1a75328c6940bcd69545cc3595c9e8b49f" prot="public" virt="non-virtual"><scope>AEnvironmentSearchSystem</scope><name>PointToScoreMap</name></member>
+      <member refid="class_a_environment_search_system_1ac43f3a540a94c64e9c5d9212075482ff" prot="public" virt="non-virtual"><scope>AEnvironmentSearchSystem</scope><name>PointToTesterToScoreMap</name></member>
+      <member refid="class_a_environment_search_system_1a58d68a194ba7e81073899e7a8c5815bd" prot="public" virt="non-virtual"><scope>AEnvironmentSearchSystem</scope><name>PointToValueIndicatorMap</name></member>
+      <member refid="class_a_environment_search_system_1a5da883e1bfcb337a4de1b2c8441e1a78" prot="public" virt="non-virtual"><scope>AEnvironmentSearchSystem</scope><name>ScaleIndicatorBoxValues</name></member>
+      <member refid="class_a_environment_search_system_1a8493b3ead5a9920189cfc32ac664a544" prot="public" virt="non-virtual"><scope>AEnvironmentSearchSystem</scope><name>Scene</name></member>
+      <member refid="class_a_environment_search_system_1affd5cdac03d40fde06fae4346cc236a1" prot="public" virt="non-virtual"><scope>AEnvironmentSearchSystem</scope><name>ScorePoints</name></member>
+      <member refid="class_a_environment_search_system_1acde5d1baca6348eebd53d18f09e7fbd4" prot="public" virt="non-virtual"><scope>AEnvironmentSearchSystem</scope><name>ScoreToPointMap</name></member>
+      <member refid="class_a_environment_search_system_1a58d6b658eedc8c6a8cb23ea34aaf063f" prot="public" virt="non-virtual"><scope>AEnvironmentSearchSystem</scope><name>SearchPoints</name></member>
+      <member refid="class_a_environment_search_system_1aadc73681064fd1d9ceeea6ee1519892b" prot="public" virt="non-virtual"><scope>AEnvironmentSearchSystem</scope><name>SpawnIndicatorBoxes</name></member>
+      <member refid="class_a_environment_search_system_1a62822fdb21a299bed41177034b8344e1" prot="public" virt="non-virtual"><scope>AEnvironmentSearchSystem</scope><name>TestActors</name></member>
+      <member refid="class_a_environment_search_system_1aff63d054a27b8e45e999533e0c5e0f0f" prot="public" virt="virtual"><scope>AEnvironmentSearchSystem</scope><name>Tick</name></member>
+      <member refid="class_a_environment_search_system_1a1b668edb5d5a912e06d1ccab18821d1c" prot="public" virt="non-virtual"><scope>AEnvironmentSearchSystem</scope><name>ValueIndicatorBoxClass</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

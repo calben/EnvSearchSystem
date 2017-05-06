@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_env_search_system_utils" kind="class" language="C++" prot="public">
+    <compoundname>EnvSearchSystemUtils</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_env_search_system_utils_1a5d26d951d62bb1ccbf4fcda411741dd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>EnvSearchSystemUtils::EnvSearchSystemUtils</definition>
+        <argsstring>()</argsstring>
+        <name>EnvSearchSystemUtils</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/EnvSearchSystemUtils.h" line="19" column="1" bodyfile="EnvSearcher/EnvSearchSystemUtils.cpp" bodystart="6" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_env_search_system_utils_1af50fc96c4d3adb280155b1aa3b52cc98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>EnvSearchSystemUtils::~EnvSearchSystemUtils</definition>
+        <argsstring>()</argsstring>
+        <name>~EnvSearchSystemUtils</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/EnvSearchSystemUtils.h" line="20" column="1" bodyfile="EnvSearcher/EnvSearchSystemUtils.cpp" bodystart="10" bodyend="12"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_env_search_system_utils_1adf8bc2a23f79ae79973eb1b332445b5e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EnvSearchSystemUtils::GenerateGrid</definition>
+        <argsstring>(EGridShape GridShape, FVector Origin, int GridXCount, int GridYCount, int GridZCount, float GridXSpacing, float GridYSpacing, float GridZSpacing, TArray&lt; FVector &gt; *GridPoints)</argsstring>
+        <name>GenerateGrid</name>
+        <param>
+          <type>EGridShape</type>
+          <declname>GridShape</declname>
+        </param>
+        <param>
+          <type>FVector</type>
+          <declname>Origin</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>GridXCount</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>GridYCount</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>GridZCount</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>GridXSpacing</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>GridYSpacing</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>GridZSpacing</declname>
+        </param>
+        <param>
+          <type>TArray&lt; FVector &gt; *</type>
+          <declname>GridPoints</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/EnvSearchSystemUtils.h" line="22" column="1" bodyfile="EnvSearcher/EnvSearchSystemUtils.cpp" bodystart="14" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="61">
+        <label>EnvSearchSystemUtils</label>
+        <link refid="class_env_search_system_utils"/>
+      </node>
+    </collaborationgraph>
+    <location file="EnvSearcher/EnvSearchSystemUtils.h" line="17" column="1" bodyfile="EnvSearcher/EnvSearchSystemUtils.h" bodystart="16" bodyend="24"/>
+    <listofallmembers>
+      <member refid="class_env_search_system_utils_1a5d26d951d62bb1ccbf4fcda411741dd9" prot="public" virt="non-virtual"><scope>EnvSearchSystemUtils</scope><name>EnvSearchSystemUtils</name></member>
+      <member refid="class_env_search_system_utils_1adf8bc2a23f79ae79973eb1b332445b5e" prot="public" virt="non-virtual"><scope>EnvSearchSystemUtils</scope><name>GenerateGrid</name></member>
+      <member refid="class_env_search_system_utils_1af50fc96c4d3adb280155b1aa3b52cc98" prot="public" virt="non-virtual"><scope>EnvSearchSystemUtils</scope><name>~EnvSearchSystemUtils</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_a_distance_test_actor" kind="class" language="C++" prot="public">
+    <compoundname>ADistanceTestActor</compoundname>
+    <basecompoundref refid="class_a_environment_test_actor" prot="public" virt="non-virtual">AEnvironmentTestActor</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_a_distance_test_actor_1ae45aceb4cb883c4f1ae65bca6f772278" prot="public" static="no" mutable="no">
+        <type>AActor *</type>
+        <definition>AActor* ADistanceTestActor::DistanceTestTarget</definition>
+        <argsstring></argsstring>
+        <name>DistanceTestTarget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/EnvironmentTesters/DistanceTestActor.h" line="19" column="1" bodyfile="EnvSearcher/SearchSystems/EnvironmentTesters/DistanceTestActor.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_distance_test_actor_1a8592951749671934628a8f4e26b67790" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>float ADistanceTestActor::TestEnvironment</definition>
+        <argsstring>() override</argsstring>
+        <name>TestEnvironment</name>
+        <reimplements refid="class_a_environment_test_actor_1ab3562bc5bc6619085328ab997b45d327">TestEnvironment</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/EnvironmentTesters/DistanceTestActor.h" line="21" column="1" bodyfile="EnvSearcher/SearchSystems/EnvironmentTesters/DistanceTestActor.cpp" bodystart="6" bodyend="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="9">
+        <label>AEnvironmentTestActor</label>
+        <link refid="class_a_environment_test_actor"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>ADistanceTestActor</label>
+        <link refid="class_a_distance_test_actor"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>AActor</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="12">
+        <label>AEnvironmentTestActor</label>
+        <link refid="class_a_environment_test_actor"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>ADistanceTestActor</label>
+        <link refid="class_a_distance_test_actor"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>AActor</label>
+      </node>
+    </collaborationgraph>
+    <location file="EnvSearcher/SearchSystems/EnvironmentTesters/DistanceTestActor.h" line="13" column="1" bodyfile="EnvSearcher/SearchSystems/EnvironmentTesters/DistanceTestActor.h" bodystart="12" bodyend="24"/>
+    <listofallmembers>
+      <member refid="class_a_environment_test_actor_1ac9adb473c8d0a66c98396ae9545226d3" prot="public" virt="non-virtual"><scope>ADistanceTestActor</scope><name>AEnvironmentTestActor</name></member>
+      <member refid="class_a_environment_test_actor_1a346c90ebd0b1710086a5ed5fc377f86a" prot="public" virt="virtual"><scope>ADistanceTestActor</scope><name>BeginPlay</name></member>
+      <member refid="class_a_distance_test_actor_1ae45aceb4cb883c4f1ae65bca6f772278" prot="public" virt="non-virtual"><scope>ADistanceTestActor</scope><name>DistanceTestTarget</name></member>
+      <member refid="class_a_environment_test_actor_1a0aa2e66b4172f1fda260dce4a0274936" prot="public" virt="non-virtual"><scope>ADistanceTestActor</scope><name>GetScore</name></member>
+      <member refid="class_a_environment_test_actor_1a4ad4d1aec0c1312a6ff59379048e1d83" prot="public" virt="non-virtual"><scope>ADistanceTestActor</scope><name>ResultMultiplier</name></member>
+      <member refid="class_a_environment_test_actor_1ac090b88e737401480b21fb8006967ca2" prot="public" virt="non-virtual"><scope>ADistanceTestActor</scope><name>Scene</name></member>
+      <member refid="class_a_distance_test_actor_1a8592951749671934628a8f4e26b67790" prot="public" virt="virtual"><scope>ADistanceTestActor</scope><name>TestEnvironment</name></member>
+      <member refid="class_a_environment_test_actor_1ac97e736062e22fa692b98df5339a855c" prot="public" virt="virtual"><scope>ADistanceTestActor</scope><name>Tick</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

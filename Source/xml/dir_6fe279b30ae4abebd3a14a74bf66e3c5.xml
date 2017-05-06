@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_6fe279b30ae4abebd3a14a74bf66e3c5" kind="dir">
+    <compoundname>EnvSearcher</compoundname>
+    <innerdir refid="dir_27d4a60e99bf6083ec4c84ae68883d61">EnvSearcher/Actors</innerdir>
+    <innerdir refid="dir_9e82610bf03c56e3b7ee6ea7297bd099">EnvSearcher/SearchSystems</innerdir>
+    <innerfile refid="_env_searcher_8_build_8cs">EnvSearcher.Build.cs</innerfile>
+    <innerfile refid="_env_searcher_8cpp">EnvSearcher.cpp</innerfile>
+    <innerfile refid="_env_searcher_8h">EnvSearcher.h</innerfile>
+    <innerfile refid="_env_searcher_game_mode_base_8cpp">EnvSearcherGameModeBase.cpp</innerfile>
+    <innerfile refid="_env_searcher_game_mode_base_8h">EnvSearcherGameModeBase.h</innerfile>
+    <innerfile refid="_env_search_system_utils_8cpp">EnvSearchSystemUtils.cpp</innerfile>
+    <innerfile refid="_env_search_system_utils_8h">EnvSearchSystemUtils.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="EnvSearcher/"/>
+  </compounddef>
+</doxygen>

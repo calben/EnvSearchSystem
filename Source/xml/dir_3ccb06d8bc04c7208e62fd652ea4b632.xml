@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_3ccb06d8bc04c7208e62fd652ea4b632" kind="dir">
+    <compoundname>EnvSearcher/SearchSystems/IterativeSearchers</compoundname>
+    <innerfile refid="_best_sub_grid_search_system_8cpp">BestSubGridSearchSystem.cpp</innerfile>
+    <innerfile refid="_best_sub_grid_search_system_8h">BestSubGridSearchSystem.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="EnvSearcher/SearchSystems/IterativeSearchers/"/>
+  </compounddef>
+</doxygen>

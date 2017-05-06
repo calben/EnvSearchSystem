@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_env_search_system_utils_8h" kind="file" language="C++">
+    <compoundname>EnvSearchSystemUtils.h</compoundname>
+    <includedby refid="_env_search_system_utils_8cpp" local="yes">EnvSearcher/EnvSearchSystemUtils.cpp</includedby>
+    <includedby refid="_grid_search_system_8h" local="yes">EnvSearcher/SearchSystems/GridSearchSystem.h</includedby>
+    <invincdepgraph>
+      <node id="38">
+        <label>EnvSearcher/SearchSystems/GridSearchSystem.h</label>
+        <link refid="_grid_search_system_8h_source"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>EnvSearcher/SearchSystems/IterativeSearchers/BestSubGridSearchSystem.h</label>
+        <link refid="_best_sub_grid_search_system_8h_source"/>
+      </node>
+      <node id="37">
+        <label>EnvSearcher/EnvSearchSystemUtils.h</label>
+        <link refid="_env_search_system_utils_8h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_env_search_system_utils" prot="public">EnvSearchSystemUtils</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_env_search_system_utils_8h_1aea9a84211dd38c3128ba4028db758942" prot="public" static="no">
+        <name>EGridShape</name>
+        <enumvalue id="_env_search_system_utils_8h_1aea9a84211dd38c3128ba4028db758942aceb46ca115d05c51aa5a16a8867c3304" prot="public">
+          <name>Square</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_env_search_system_utils_8h_1aea9a84211dd38c3128ba4028db758942a8f7671185d590914ac21c7511767b699" prot="public">
+          <name>Diamond</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_env_search_system_utils_8h_1aea9a84211dd38c3128ba4028db758942a30954d90085f6eaaf5817917fc5fecb3" prot="public">
+          <name>Circle</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/EnvSearchSystemUtils.h" line="7" column="1" bodyfile="EnvSearcher/EnvSearchSystemUtils.h" bodystart="6" bodyend="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Fill<sp/>out<sp/>your<sp/>copyright<sp/>notice<sp/>in<sp/>the<sp/>Description<sp/>page<sp/>of<sp/>Project<sp/>Settings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">UENUM(BlueprintType)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/>EGridShape<sp/>:<sp/>uint8</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>Square,</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>Diamond,</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>Circle</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_env_search_system_utils" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal">ENVSEARCHER_API<sp/><ref refid="class_env_search_system_utils" kindref="compound">EnvSearchSystemUtils</ref></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_env_search_system_utils" kindref="compound">EnvSearchSystemUtils</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="class_env_search_system_utils" kindref="compound">EnvSearchSystemUtils</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>EnvSearchSystemUtils::GenerateGrid(EGridShape<sp/>GridShape,<sp/>FVector<sp/>Origin,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GridXCount,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GridYCount,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>GridZCount,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>GridXSpacing,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>GridYSpacing,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>GridZSpacing,<sp/>TArray&lt;FVector&gt;*<sp/>GridPoints);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="EnvSearcher/EnvSearchSystemUtils.h"/>
+  </compounddef>
+</doxygen>

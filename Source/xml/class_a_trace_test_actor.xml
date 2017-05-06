@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_a_trace_test_actor" kind="class" language="C++" prot="public">
+    <compoundname>ATraceTestActor</compoundname>
+    <basecompoundref refid="class_a_environment_test_actor" prot="public" virt="non-virtual">AEnvironmentTestActor</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_a_trace_test_actor_1a5448af27ab47d4817d87172f293a93fa" prot="public" static="no" mutable="no">
+        <type>AActor *</type>
+        <definition>AActor* ATraceTestActor::TraceTestTarget</definition>
+        <argsstring></argsstring>
+        <name>TraceTestTarget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/EnvironmentTesters/TraceTestActor.h" line="20" column="1" bodyfile="EnvSearcher/SearchSystems/EnvironmentTesters/TraceTestActor.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_trace_test_actor_1a0c43ed3415e980529129747884fdfeae" prot="public" static="no" mutable="no">
+        <type>FVector</type>
+        <definition>FVector ATraceTestActor::TraceLocationOverride</definition>
+        <argsstring></argsstring>
+        <name>TraceLocationOverride</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/EnvironmentTesters/TraceTestActor.h" line="23" column="1" bodyfile="EnvSearcher/SearchSystems/EnvironmentTesters/TraceTestActor.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_trace_test_actor_1aed3c1e87f18ab752f47cbf769c7ad863" prot="public" static="no" mutable="no">
+        <type>AActor *</type>
+        <definition>AActor* ATraceTestActor::BlockingActor</definition>
+        <argsstring></argsstring>
+        <name>BlockingActor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/EnvironmentTesters/TraceTestActor.h" line="26" column="1" bodyfile="EnvSearcher/SearchSystems/EnvironmentTesters/TraceTestActor.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_trace_test_actor_1a37f8711e51028a76c49c099af43eed7e" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ATraceTestActor::bShowLineTraceDebug</definition>
+        <argsstring></argsstring>
+        <name>bShowLineTraceDebug</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/EnvironmentTesters/TraceTestActor.h" line="29" column="1" bodyfile="EnvSearcher/SearchSystems/EnvironmentTesters/TraceTestActor.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_trace_test_actor_1a4f21bb3b88615d8c2c23aa5fb7bca3d2" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ATraceTestActor::bTraceToLocationOverride</definition>
+        <argsstring></argsstring>
+        <name>bTraceToLocationOverride</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/EnvironmentTesters/TraceTestActor.h" line="32" column="1" bodyfile="EnvSearcher/SearchSystems/EnvironmentTesters/TraceTestActor.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_trace_test_actor_1a518244a1fdccaa948bc268af1ddb2a6f" prot="public" static="no" mutable="no">
+        <type>TEnumAsByte&lt; ECollisionChannel &gt;</type>
+        <definition>TEnumAsByte&lt;ECollisionChannel&gt; ATraceTestActor::TraceChannel</definition>
+        <argsstring></argsstring>
+        <name>TraceChannel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/EnvironmentTesters/TraceTestActor.h" line="35" column="1" bodyfile="EnvSearcher/SearchSystems/EnvironmentTesters/TraceTestActor.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_trace_test_actor_1a395b74badc7bbc4036b9501d50157963" prot="public" static="no" mutable="no">
+        <type>FCollisionQueryParams</type>
+        <definition>FCollisionQueryParams ATraceTestActor::Params</definition>
+        <argsstring></argsstring>
+        <name>Params</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/EnvironmentTesters/TraceTestActor.h" line="37" column="1" bodyfile="EnvSearcher/SearchSystems/EnvironmentTesters/TraceTestActor.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_trace_test_actor_1abcda927a03f2707e602aab5f4994a351" prot="public" static="no" mutable="no">
+        <type>FCollisionResponseParams</type>
+        <definition>FCollisionResponseParams ATraceTestActor::ResponseParam</definition>
+        <argsstring></argsstring>
+        <name>ResponseParam</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/EnvironmentTesters/TraceTestActor.h" line="39" column="1" bodyfile="EnvSearcher/SearchSystems/EnvironmentTesters/TraceTestActor.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_trace_test_actor_1a0a8e07f4ffc874383a3321e99e85a2a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>float ATraceTestActor::TestEnvironment</definition>
+        <argsstring>() override</argsstring>
+        <name>TestEnvironment</name>
+        <reimplements refid="class_a_environment_test_actor_1ab3562bc5bc6619085328ab997b45d327">TestEnvironment</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="EnvSearcher/SearchSystems/EnvironmentTesters/TraceTestActor.h" line="42" column="1" bodyfile="EnvSearcher/SearchSystems/EnvironmentTesters/TraceTestActor.cpp" bodystart="6" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="45">
+        <label>AEnvironmentTestActor</label>
+        <link refid="class_a_environment_test_actor"/>
+        <childnode refid="46" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>AActor</label>
+      </node>
+      <node id="44">
+        <label>ATraceTestActor</label>
+        <link refid="class_a_trace_test_actor"/>
+        <childnode refid="45" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="48">
+        <label>AEnvironmentTestActor</label>
+        <link refid="class_a_environment_test_actor"/>
+        <childnode refid="49" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>AActor</label>
+      </node>
+      <node id="47">
+        <label>ATraceTestActor</label>
+        <link refid="class_a_trace_test_actor"/>
+        <childnode refid="48" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="EnvSearcher/SearchSystems/EnvironmentTesters/TraceTestActor.h" line="13" column="1" bodyfile="EnvSearcher/SearchSystems/EnvironmentTesters/TraceTestActor.h" bodystart="12" bodyend="45"/>
+    <listofallmembers>
+      <member refid="class_a_environment_test_actor_1ac9adb473c8d0a66c98396ae9545226d3" prot="public" virt="non-virtual"><scope>ATraceTestActor</scope><name>AEnvironmentTestActor</name></member>
+      <member refid="class_a_environment_test_actor_1a346c90ebd0b1710086a5ed5fc377f86a" prot="public" virt="virtual"><scope>ATraceTestActor</scope><name>BeginPlay</name></member>
+      <member refid="class_a_trace_test_actor_1aed3c1e87f18ab752f47cbf769c7ad863" prot="public" virt="non-virtual"><scope>ATraceTestActor</scope><name>BlockingActor</name></member>
+      <member refid="class_a_trace_test_actor_1a37f8711e51028a76c49c099af43eed7e" prot="public" virt="non-virtual"><scope>ATraceTestActor</scope><name>bShowLineTraceDebug</name></member>
+      <member refid="class_a_trace_test_actor_1a4f21bb3b88615d8c2c23aa5fb7bca3d2" prot="public" virt="non-virtual"><scope>ATraceTestActor</scope><name>bTraceToLocationOverride</name></member>
+      <member refid="class_a_environment_test_actor_1a0aa2e66b4172f1fda260dce4a0274936" prot="public" virt="non-virtual"><scope>ATraceTestActor</scope><name>GetScore</name></member>
+      <member refid="class_a_trace_test_actor_1a395b74badc7bbc4036b9501d50157963" prot="public" virt="non-virtual"><scope>ATraceTestActor</scope><name>Params</name></member>
+      <member refid="class_a_trace_test_actor_1abcda927a03f2707e602aab5f4994a351" prot="public" virt="non-virtual"><scope>ATraceTestActor</scope><name>ResponseParam</name></member>
+      <member refid="class_a_environment_test_actor_1a4ad4d1aec0c1312a6ff59379048e1d83" prot="public" virt="non-virtual"><scope>ATraceTestActor</scope><name>ResultMultiplier</name></member>
+      <member refid="class_a_environment_test_actor_1ac090b88e737401480b21fb8006967ca2" prot="public" virt="non-virtual"><scope>ATraceTestActor</scope><name>Scene</name></member>
+      <member refid="class_a_trace_test_actor_1a0a8e07f4ffc874383a3321e99e85a2a6" prot="public" virt="virtual"><scope>ATraceTestActor</scope><name>TestEnvironment</name></member>
+      <member refid="class_a_environment_test_actor_1ac97e736062e22fa692b98df5339a855c" prot="public" virt="virtual"><scope>ATraceTestActor</scope><name>Tick</name></member>
+      <member refid="class_a_trace_test_actor_1a518244a1fdccaa948bc268af1ddb2a6f" prot="public" virt="non-virtual"><scope>ATraceTestActor</scope><name>TraceChannel</name></member>
+      <member refid="class_a_trace_test_actor_1a0c43ed3415e980529129747884fdfeae" prot="public" virt="non-virtual"><scope>ATraceTestActor</scope><name>TraceLocationOverride</name></member>
+      <member refid="class_a_trace_test_actor_1a5448af27ab47d4817d87172f293a93fa" prot="public" virt="non-virtual"><scope>ATraceTestActor</scope><name>TraceTestTarget</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

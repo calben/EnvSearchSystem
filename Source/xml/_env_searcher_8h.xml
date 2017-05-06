@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_env_searcher_8h" kind="file" language="C++">
+    <compoundname>EnvSearcher.h</compoundname>
+    <includes local="yes">Engine.h</includes>
+    <includedby refid="_value_indicator_box_8cpp" local="yes">EnvSearcher/Actors/ValueIndicatorBox.cpp</includedby>
+    <includedby refid="_env_searcher_8cpp" local="yes">EnvSearcher/EnvSearcher.cpp</includedby>
+    <includedby refid="_env_searcher_game_mode_base_8cpp" local="yes">EnvSearcher/EnvSearcherGameModeBase.cpp</includedby>
+    <includedby refid="_env_search_system_utils_8cpp" local="yes">EnvSearcher/EnvSearchSystemUtils.cpp</includedby>
+    <includedby refid="_environment_search_system_8cpp" local="yes">EnvSearcher/SearchSystems/EnvironmentSearchSystem.cpp</includedby>
+    <includedby refid="_distance_test_actor_8cpp" local="yes">EnvSearcher/SearchSystems/EnvironmentTesters/DistanceTestActor.cpp</includedby>
+    <includedby refid="_environment_test_actor_8cpp" local="yes">EnvSearcher/SearchSystems/EnvironmentTesters/EnvironmentTestActor.cpp</includedby>
+    <includedby refid="_trace_test_actor_8cpp" local="yes">EnvSearcher/SearchSystems/EnvironmentTesters/TraceTestActor.cpp</includedby>
+    <includedby refid="_grid_search_system_8cpp" local="yes">EnvSearcher/SearchSystems/GridSearchSystem.cpp</includedby>
+    <includedby refid="_best_sub_grid_search_system_8cpp" local="yes">EnvSearcher/SearchSystems/IterativeSearchers/BestSubGridSearchSystem.cpp</includedby>
+    <includedby refid="_point_search_system_8cpp" local="yes">EnvSearcher/SearchSystems/PointSearchSystem.cpp</includedby>
+    <incdepgraph>
+      <node id="17">
+        <label>EnvSearcher/EnvSearcher.h</label>
+        <link refid="_env_searcher_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>Engine.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Fill<sp/>out<sp/>your<sp/>copyright<sp/>notice<sp/>in<sp/>the<sp/>Description<sp/>page<sp/>of<sp/>Project<sp/>Settings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Engine.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="EnvSearcher/EnvSearcher.h"/>
+  </compounddef>
+</doxygen>

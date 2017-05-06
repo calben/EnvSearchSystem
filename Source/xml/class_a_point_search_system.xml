@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_a_point_search_system" kind="class" language="C++" prot="public">
+    <compoundname>APointSearchSystem</compoundname>
+    <basecompoundref refid="class_a_environment_search_system" prot="public" virt="non-virtual">AEnvironmentSearchSystem</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="39">
+        <label>AEnvironmentSearchSystem</label>
+        <link refid="class_a_environment_search_system"/>
+        <childnode refid="40" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>AActor</label>
+      </node>
+      <node id="38">
+        <label>APointSearchSystem</label>
+        <link refid="class_a_point_search_system"/>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="42">
+        <label>AEnvironmentSearchSystem</label>
+        <link refid="class_a_environment_search_system"/>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>AActor</label>
+      </node>
+      <node id="41">
+        <label>APointSearchSystem</label>
+        <link refid="class_a_point_search_system"/>
+        <childnode refid="42" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="EnvSearcher/SearchSystems/PointSearchSystem.h" line="13" column="1" bodyfile="EnvSearcher/SearchSystems/PointSearchSystem.h" bodystart="12" bodyend="16"/>
+    <listofallmembers>
+      <member refid="class_a_environment_search_system_1a52a2902ecd5195065dea44cb3ea95abb" prot="public" virt="non-virtual"><scope>APointSearchSystem</scope><name>AEnvironmentSearchSystem</name></member>
+      <member refid="class_a_environment_search_system_1a616c480011cab015dd830fd852419206" prot="public" virt="non-virtual"><scope>APointSearchSystem</scope><name>bDebugMode</name></member>
+      <member refid="class_a_environment_search_system_1a2e8839a3070f6c1da1af28adf870e4d0" prot="public" virt="virtual"><scope>APointSearchSystem</scope><name>BeginPlay</name></member>
+      <member refid="class_a_environment_search_system_1a5abdf57c9d9c425387b77f8c93b3d07f" prot="public" virt="non-virtual"><scope>APointSearchSystem</scope><name>bScaleIndicatorBoxValues</name></member>
+      <member refid="class_a_environment_search_system_1a672c9b7613503b65aef96d591188b002" prot="public" virt="non-virtual"><scope>APointSearchSystem</scope><name>bShowClockTime</name></member>
+      <member refid="class_a_environment_search_system_1a25aefcb32532d14d68ca67290f94bbef" prot="public" virt="non-virtual"><scope>APointSearchSystem</scope><name>bShowIndicatorBoxes</name></member>
+      <member refid="class_a_environment_search_system_1afd4e7468511d11a80f1bb5c1b597c411" prot="public" virt="non-virtual"><scope>APointSearchSystem</scope><name>GetHighestScoringPoint</name></member>
+      <member refid="class_a_environment_search_system_1a4c74de48fcb84e22a785b0c1e9706451" prot="public" virt="non-virtual"><scope>APointSearchSystem</scope><name>GetHighestScoringPoint</name></member>
+      <member refid="class_a_environment_search_system_1a6747d34fceaf48b0d737d94830825122" prot="public" virt="non-virtual"><scope>APointSearchSystem</scope><name>GetLowestScoringPoint</name></member>
+      <member refid="class_a_environment_search_system_1a182b4589433aa0a782f83c9daa5db5e1" prot="public" virt="non-virtual"><scope>APointSearchSystem</scope><name>GetLowestScoringPoint</name></member>
+      <member refid="class_a_environment_search_system_1a65322d27f18850e563e7e9d132c2d528" prot="public" virt="virtual"><scope>APointSearchSystem</scope><name>PerformSearch</name></member>
+      <member refid="class_a_environment_search_system_1a75328c6940bcd69545cc3595c9e8b49f" prot="public" virt="non-virtual"><scope>APointSearchSystem</scope><name>PointToScoreMap</name></member>
+      <member refid="class_a_environment_search_system_1ac43f3a540a94c64e9c5d9212075482ff" prot="public" virt="non-virtual"><scope>APointSearchSystem</scope><name>PointToTesterToScoreMap</name></member>
+      <member refid="class_a_environment_search_system_1a58d68a194ba7e81073899e7a8c5815bd" prot="public" virt="non-virtual"><scope>APointSearchSystem</scope><name>PointToValueIndicatorMap</name></member>
+      <member refid="class_a_environment_search_system_1a5da883e1bfcb337a4de1b2c8441e1a78" prot="public" virt="non-virtual"><scope>APointSearchSystem</scope><name>ScaleIndicatorBoxValues</name></member>
+      <member refid="class_a_environment_search_system_1a8493b3ead5a9920189cfc32ac664a544" prot="public" virt="non-virtual"><scope>APointSearchSystem</scope><name>Scene</name></member>
+      <member refid="class_a_environment_search_system_1affd5cdac03d40fde06fae4346cc236a1" prot="public" virt="non-virtual"><scope>APointSearchSystem</scope><name>ScorePoints</name></member>
+      <member refid="class_a_environment_search_system_1acde5d1baca6348eebd53d18f09e7fbd4" prot="public" virt="non-virtual"><scope>APointSearchSystem</scope><name>ScoreToPointMap</name></member>
+      <member refid="class_a_environment_search_system_1a58d6b658eedc8c6a8cb23ea34aaf063f" prot="public" virt="non-virtual"><scope>APointSearchSystem</scope><name>SearchPoints</name></member>
+      <member refid="class_a_environment_search_system_1aadc73681064fd1d9ceeea6ee1519892b" prot="public" virt="non-virtual"><scope>APointSearchSystem</scope><name>SpawnIndicatorBoxes</name></member>
+      <member refid="class_a_environment_search_system_1a62822fdb21a299bed41177034b8344e1" prot="public" virt="non-virtual"><scope>APointSearchSystem</scope><name>TestActors</name></member>
+      <member refid="class_a_environment_search_system_1aff63d054a27b8e45e999533e0c5e0f0f" prot="public" virt="virtual"><scope>APointSearchSystem</scope><name>Tick</name></member>
+      <member refid="class_a_environment_search_system_1a1b668edb5d5a912e06d1ccab18821d1c" prot="public" virt="non-virtual"><scope>APointSearchSystem</scope><name>ValueIndicatorBoxClass</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

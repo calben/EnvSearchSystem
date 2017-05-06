@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="class_a_best_sub_grid_search_system" kind="class"><name>ABestSubGridSearchSystem</name>
+    <member refid="class_a_best_sub_grid_search_system_1adc279d9e2ef711b509299e1369768252" kind="variable"><name>MaximumIterations</name></member>
+    <member refid="class_a_best_sub_grid_search_system_1a50a389388a7d692d44b5fbc92ef019ee" kind="variable"><name>MinimumIterations</name></member>
+    <member refid="class_a_best_sub_grid_search_system_1a704a18c04a04f4cff7b75010e46066d1" kind="variable"><name>bScoreIsError</name></member>
+    <member refid="class_a_best_sub_grid_search_system_1a27b6dcacd904f983b17754e6034525bf" kind="variable"><name>GoalScore</name></member>
+    <member refid="class_a_best_sub_grid_search_system_1a961a1fca625bc22d72e17bbd8214a49a" kind="variable"><name>bStopIfGoalReached</name></member>
+    <member refid="class_a_best_sub_grid_search_system_1a80cf198086edfa0ef24a1c5de5c6ff9d" kind="function"><name>PerformSearch</name></member>
+  </compound>
+  <compound refid="class_a_distance_test_actor" kind="class"><name>ADistanceTestActor</name>
+    <member refid="class_a_distance_test_actor_1ae45aceb4cb883c4f1ae65bca6f772278" kind="variable"><name>DistanceTestTarget</name></member>
+    <member refid="class_a_distance_test_actor_1a8592951749671934628a8f4e26b67790" kind="function"><name>TestEnvironment</name></member>
+  </compound>
+  <compound refid="class_a_environment_search_system" kind="class"><name>AEnvironmentSearchSystem</name>
+    <member refid="class_a_environment_search_system_1a8493b3ead5a9920189cfc32ac664a544" kind="variable"><name>Scene</name></member>
+    <member refid="class_a_environment_search_system_1a58d6b658eedc8c6a8cb23ea34aaf063f" kind="variable"><name>SearchPoints</name></member>
+    <member refid="class_a_environment_search_system_1a616c480011cab015dd830fd852419206" kind="variable"><name>bDebugMode</name></member>
+    <member refid="class_a_environment_search_system_1a672c9b7613503b65aef96d591188b002" kind="variable"><name>bShowClockTime</name></member>
+    <member refid="class_a_environment_search_system_1a25aefcb32532d14d68ca67290f94bbef" kind="variable"><name>bShowIndicatorBoxes</name></member>
+    <member refid="class_a_environment_search_system_1a5abdf57c9d9c425387b77f8c93b3d07f" kind="variable"><name>bScaleIndicatorBoxValues</name></member>
+    <member refid="class_a_environment_search_system_1a1b668edb5d5a912e06d1ccab18821d1c" kind="variable"><name>ValueIndicatorBoxClass</name></member>
+    <member refid="class_a_environment_search_system_1a58d68a194ba7e81073899e7a8c5815bd" kind="variable"><name>PointToValueIndicatorMap</name></member>
+    <member refid="class_a_environment_search_system_1ac43f3a540a94c64e9c5d9212075482ff" kind="variable"><name>PointToTesterToScoreMap</name></member>
+    <member refid="class_a_environment_search_system_1a75328c6940bcd69545cc3595c9e8b49f" kind="variable"><name>PointToScoreMap</name></member>
+    <member refid="class_a_environment_search_system_1acde5d1baca6348eebd53d18f09e7fbd4" kind="variable"><name>ScoreToPointMap</name></member>
+    <member refid="class_a_environment_search_system_1a62822fdb21a299bed41177034b8344e1" kind="variable"><name>TestActors</name></member>
+    <member refid="class_a_environment_search_system_1a52a2902ecd5195065dea44cb3ea95abb" kind="function"><name>AEnvironmentSearchSystem</name></member>
+    <member refid="class_a_environment_search_system_1a2e8839a3070f6c1da1af28adf870e4d0" kind="function"><name>BeginPlay</name></member>
+    <member refid="class_a_environment_search_system_1aff63d054a27b8e45e999533e0c5e0f0f" kind="function"><name>Tick</name></member>
+    <member refid="class_a_environment_search_system_1a65322d27f18850e563e7e9d132c2d528" kind="function"><name>PerformSearch</name></member>
+    <member refid="class_a_environment_search_system_1a5da883e1bfcb337a4de1b2c8441e1a78" kind="function"><name>ScaleIndicatorBoxValues</name></member>
+    <member refid="class_a_environment_search_system_1a6747d34fceaf48b0d737d94830825122" kind="function"><name>GetLowestScoringPoint</name></member>
+    <member refid="class_a_environment_search_system_1afd4e7468511d11a80f1bb5c1b597c411" kind="function"><name>GetHighestScoringPoint</name></member>
+    <member refid="class_a_environment_search_system_1a182b4589433aa0a782f83c9daa5db5e1" kind="function"><name>GetLowestScoringPoint</name></member>
+    <member refid="class_a_environment_search_system_1a4c74de48fcb84e22a785b0c1e9706451" kind="function"><name>GetHighestScoringPoint</name></member>
+    <member refid="class_a_environment_search_system_1aadc73681064fd1d9ceeea6ee1519892b" kind="function"><name>SpawnIndicatorBoxes</name></member>
+    <member refid="class_a_environment_search_system_1affd5cdac03d40fde06fae4346cc236a1" kind="function"><name>ScorePoints</name></member>
+  </compound>
+  <compound refid="class_a_environment_test_actor" kind="class"><name>AEnvironmentTestActor</name>
+    <member refid="class_a_environment_test_actor_1ac090b88e737401480b21fb8006967ca2" kind="variable"><name>Scene</name></member>
+    <member refid="class_a_environment_test_actor_1a4ad4d1aec0c1312a6ff59379048e1d83" kind="variable"><name>ResultMultiplier</name></member>
+    <member refid="class_a_environment_test_actor_1ac9adb473c8d0a66c98396ae9545226d3" kind="function"><name>AEnvironmentTestActor</name></member>
+    <member refid="class_a_environment_test_actor_1a346c90ebd0b1710086a5ed5fc377f86a" kind="function"><name>BeginPlay</name></member>
+    <member refid="class_a_environment_test_actor_1ac97e736062e22fa692b98df5339a855c" kind="function"><name>Tick</name></member>
+    <member refid="class_a_environment_test_actor_1ab3562bc5bc6619085328ab997b45d327" kind="function"><name>TestEnvironment</name></member>
+    <member refid="class_a_environment_test_actor_1a0aa2e66b4172f1fda260dce4a0274936" kind="function"><name>GetScore</name></member>
+  </compound>
+  <compound refid="class_a_env_searcher_game_mode_base" kind="class"><name>AEnvSearcherGameModeBase</name>
+  </compound>
+  <compound refid="class_a_grid_search_system" kind="class"><name>AGridSearchSystem</name>
+    <member refid="class_a_grid_search_system_1ac9999f951acb24b1fe05cac6c0b443aa" kind="variable"><name>GridShape</name></member>
+    <member refid="class_a_grid_search_system_1a2b1ee04620c8dad76b6d69f92e492795" kind="variable"><name>GridXCount</name></member>
+    <member refid="class_a_grid_search_system_1a73b54c667352b1166298b120cddb137d" kind="variable"><name>GridYCount</name></member>
+    <member refid="class_a_grid_search_system_1ad322dc62610caa0df03cdb938fe87aee" kind="variable"><name>GridZCount</name></member>
+    <member refid="class_a_grid_search_system_1a1fb0a7b5cd7bf59bd583340a7cbe1655" kind="variable"><name>GridXSpacing</name></member>
+    <member refid="class_a_grid_search_system_1a3f5da0cbd167ad70373409792d11285e" kind="variable"><name>GridYSpacing</name></member>
+    <member refid="class_a_grid_search_system_1a8795a1d9083d06bf71fb1b6e607eafba" kind="variable"><name>GridZSpacing</name></member>
+    <member refid="class_a_grid_search_system_1a39d548469787ff67cfa963736ed3c271" kind="function"><name>PerformSearch</name></member>
+  </compound>
+  <compound refid="class_a_point_search_system" kind="class"><name>APointSearchSystem</name>
+  </compound>
+  <compound refid="class_a_trace_test_actor" kind="class"><name>ATraceTestActor</name>
+    <member refid="class_a_trace_test_actor_1a5448af27ab47d4817d87172f293a93fa" kind="variable"><name>TraceTestTarget</name></member>
+    <member refid="class_a_trace_test_actor_1a0c43ed3415e980529129747884fdfeae" kind="variable"><name>TraceLocationOverride</name></member>
+    <member refid="class_a_trace_test_actor_1aed3c1e87f18ab752f47cbf769c7ad863" kind="variable"><name>BlockingActor</name></member>
+    <member refid="class_a_trace_test_actor_1a37f8711e51028a76c49c099af43eed7e" kind="variable"><name>bShowLineTraceDebug</name></member>
+    <member refid="class_a_trace_test_actor_1a4f21bb3b88615d8c2c23aa5fb7bca3d2" kind="variable"><name>bTraceToLocationOverride</name></member>
+    <member refid="class_a_trace_test_actor_1a518244a1fdccaa948bc268af1ddb2a6f" kind="variable"><name>TraceChannel</name></member>
+    <member refid="class_a_trace_test_actor_1a395b74badc7bbc4036b9501d50157963" kind="variable"><name>Params</name></member>
+    <member refid="class_a_trace_test_actor_1abcda927a03f2707e602aab5f4994a351" kind="variable"><name>ResponseParam</name></member>
+    <member refid="class_a_trace_test_actor_1a0a8e07f4ffc874383a3321e99e85a2a6" kind="function"><name>TestEnvironment</name></member>
+  </compound>
+  <compound refid="class_a_value_indicator_box" kind="class"><name>AValueIndicatorBox</name>
+    <member refid="class_a_value_indicator_box_1ae6c7d44d2e220ae145b74e4445c148d5" kind="variable"><name>Scene</name></member>
+    <member refid="class_a_value_indicator_box_1ad23d161b269bdeceb0da9776fe6111c3" kind="variable"><name>Mesh</name></member>
+    <member refid="class_a_value_indicator_box_1ad0f1870b606426e332c62c8040c9b26b" kind="variable"><name>Value</name></member>
+    <member refid="class_a_value_indicator_box_1a30dc5ef6bec09fc0bf8600ea3d23264f" kind="variable"><name>BaseOpacity</name></member>
+    <member refid="class_a_value_indicator_box_1a6873036c631575595f53e74bde9b7708" kind="variable"><name>OpacityMultiplier</name></member>
+    <member refid="class_a_value_indicator_box_1a1e533340f14bee89f8c741bb8a403ffd" kind="variable"><name>DynamicMaterial</name></member>
+    <member refid="class_a_value_indicator_box_1a7ffd3d45de4fd70dcf82f613081456e9" kind="function"><name>AValueIndicatorBox</name></member>
+    <member refid="class_a_value_indicator_box_1a241df19bbdd8dee5e10734f3f81bacea" kind="function"><name>BeginPlay</name></member>
+    <member refid="class_a_value_indicator_box_1abdffbd5784d61c0a9a3129be3442b8ba" kind="function"><name>Tick</name></member>
+    <member refid="class_a_value_indicator_box_1ab467b0ff0834c9d529d259c3ecc24a3d" kind="function"><name>SetValue</name></member>
+    <member refid="class_a_value_indicator_box_1adb2643f18a1b694ef932e3df4506ec6a" kind="function"><name>GetHeatMapColor</name></member>
+  </compound>
+  <compound refid="struct_compare_by_vector_string" kind="struct"><name>CompareByVectorString</name>
+    <member refid="struct_compare_by_vector_string_1aab32dda55de56182571acf5b78de8dee" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="class_env_searcher" kind="class"><name>EnvSearcher</name>
+    <member refid="class_env_searcher_1a97a91d80f856bee7cc3cd8f9b8976513" kind="function"><name>EnvSearcher</name></member>
+  </compound>
+  <compound refid="class_env_search_system_utils" kind="class"><name>EnvSearchSystemUtils</name>
+    <member refid="class_env_search_system_utils_1a5d26d951d62bb1ccbf4fcda411741dd9" kind="function"><name>EnvSearchSystemUtils</name></member>
+    <member refid="class_env_search_system_utils_1af50fc96c4d3adb280155b1aa3b52cc98" kind="function"><name>~EnvSearchSystemUtils</name></member>
+    <member refid="class_env_search_system_utils_1adf8bc2a23f79ae79973eb1b332445b5e" kind="function"><name>GenerateGrid</name></member>
+  </compound>
+  <compound refid="namespace_unreal_build_tool" kind="namespace"><name>UnrealBuildTool</name>
+  </compound>
+  <compound refid="_value_indicator_box_8cpp" kind="file"><name>ValueIndicatorBox.cpp</name>
+  </compound>
+  <compound refid="_value_indicator_box_8h" kind="file"><name>ValueIndicatorBox.h</name>
+  </compound>
+  <compound refid="_env_searcher_8_build_8cs" kind="file"><name>EnvSearcher.Build.cs</name>
+  </compound>
+  <compound refid="_env_searcher_8cpp" kind="file"><name>EnvSearcher.cpp</name>
+    <member refid="_env_searcher_8cpp_1a245f8c8cd26ea330e82daabb5180daf7" kind="function"><name>IMPLEMENT_PRIMARY_GAME_MODULE</name></member>
+  </compound>
+  <compound refid="_env_searcher_8h" kind="file"><name>EnvSearcher.h</name>
+  </compound>
+  <compound refid="_env_searcher_game_mode_base_8cpp" kind="file"><name>EnvSearcherGameModeBase.cpp</name>
+  </compound>
+  <compound refid="_env_searcher_game_mode_base_8h" kind="file"><name>EnvSearcherGameModeBase.h</name>
+  </compound>
+  <compound refid="_env_search_system_utils_8cpp" kind="file"><name>EnvSearchSystemUtils.cpp</name>
+  </compound>
+  <compound refid="_env_search_system_utils_8h" kind="file"><name>EnvSearchSystemUtils.h</name>
+    <member refid="_env_search_system_utils_8h_1aea9a84211dd38c3128ba4028db758942" kind="enum"><name>EGridShape</name></member>
+    <member refid="_env_search_system_utils_8h_1aea9a84211dd38c3128ba4028db758942aceb46ca115d05c51aa5a16a8867c3304" kind="enumvalue"><name>Square</name></member>
+    <member refid="_env_search_system_utils_8h_1aea9a84211dd38c3128ba4028db758942a8f7671185d590914ac21c7511767b699" kind="enumvalue"><name>Diamond</name></member>
+    <member refid="_env_search_system_utils_8h_1aea9a84211dd38c3128ba4028db758942a30954d90085f6eaaf5817917fc5fecb3" kind="enumvalue"><name>Circle</name></member>
+  </compound>
+  <compound refid="_environment_search_system_8cpp" kind="file"><name>EnvironmentSearchSystem.cpp</name>
+  </compound>
+  <compound refid="_environment_search_system_8h" kind="file"><name>EnvironmentSearchSystem.h</name>
+  </compound>
+  <compound refid="_distance_test_actor_8cpp" kind="file"><name>DistanceTestActor.cpp</name>
+  </compound>
+  <compound refid="_distance_test_actor_8h" kind="file"><name>DistanceTestActor.h</name>
+  </compound>
+  <compound refid="_environment_test_actor_8cpp" kind="file"><name>EnvironmentTestActor.cpp</name>
+  </compound>
+  <compound refid="_environment_test_actor_8h" kind="file"><name>EnvironmentTestActor.h</name>
+  </compound>
+  <compound refid="_trace_test_actor_8cpp" kind="file"><name>TraceTestActor.cpp</name>
+  </compound>
+  <compound refid="_trace_test_actor_8h" kind="file"><name>TraceTestActor.h</name>
+  </compound>
+  <compound refid="_grid_search_system_8cpp" kind="file"><name>GridSearchSystem.cpp</name>
+  </compound>
+  <compound refid="_grid_search_system_8h" kind="file"><name>GridSearchSystem.h</name>
+  </compound>
+  <compound refid="_best_sub_grid_search_system_8cpp" kind="file"><name>BestSubGridSearchSystem.cpp</name>
+  </compound>
+  <compound refid="_best_sub_grid_search_system_8h" kind="file"><name>BestSubGridSearchSystem.h</name>
+  </compound>
+  <compound refid="_point_search_system_8cpp" kind="file"><name>PointSearchSystem.cpp</name>
+  </compound>
+  <compound refid="_point_search_system_8h" kind="file"><name>PointSearchSystem.h</name>
+  </compound>
+  <compound refid="dir_27d4a60e99bf6083ec4c84ae68883d61" kind="dir"><name>EnvSearcher/Actors</name>
+  </compound>
+  <compound refid="dir_0df4f0c0c960efbca96cf3387653f885" kind="dir"><name>EnvSearcher/SearchSystems/EnvironmentTesters</name>
+  </compound>
+  <compound refid="dir_6fe279b30ae4abebd3a14a74bf66e3c5" kind="dir"><name>EnvSearcher</name>
+  </compound>
+  <compound refid="dir_3ccb06d8bc04c7208e62fd652ea4b632" kind="dir"><name>EnvSearcher/SearchSystems/IterativeSearchers</name>
+  </compound>
+  <compound refid="dir_9e82610bf03c56e3b7ee6ea7297bd099" kind="dir"><name>EnvSearcher/SearchSystems</name>
+  </compound>
+</doxygenindex>

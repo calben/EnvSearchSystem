@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_environment_search_system_8h" kind="file" language="C++">
+    <compoundname>EnvironmentSearchSystem.h</compoundname>
+    <includes local="yes">GameFramework/Actor.h</includes>
+    <includes local="no">map</includes>
+    <includes local="no">ctime</includes>
+    <includes local="yes">EnvironmentSearchSystem.generated.h</includes>
+    <includedby refid="_environment_search_system_8cpp" local="yes">EnvSearcher/SearchSystems/EnvironmentSearchSystem.cpp</includedby>
+    <includedby refid="_grid_search_system_8h" local="yes">EnvSearcher/SearchSystems/GridSearchSystem.h</includedby>
+    <includedby refid="_point_search_system_8h" local="yes">EnvSearcher/SearchSystems/PointSearchSystem.h</includedby>
+    <incdepgraph>
+      <node id="57">
+        <label>EnvironmentSearchSystem.generated.h</label>
+      </node>
+      <node id="54">
+        <label>GameFramework/Actor.h</label>
+      </node>
+      <node id="55">
+        <label>map</label>
+      </node>
+      <node id="53">
+        <label>EnvSearcher/SearchSystems/EnvironmentSearchSystem.h</label>
+        <link refid="_environment_search_system_8h"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>ctime</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="59">
+        <label>EnvSearcher/SearchSystems/GridSearchSystem.h</label>
+        <link refid="_grid_search_system_8h_source"/>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>EnvSearcher/SearchSystems/EnvironmentSearchSystem.h</label>
+        <link refid="_environment_search_system_8h"/>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>EnvSearcher/SearchSystems/PointSearchSystem.h</label>
+        <link refid="_point_search_system_8h_source"/>
+      </node>
+      <node id="60">
+        <label>EnvSearcher/SearchSystems/IterativeSearchers/BestSubGridSearchSystem.h</label>
+        <link refid="_best_sub_grid_search_system_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_compare_by_vector_string" prot="public">CompareByVectorString</innerclass>
+    <innerclass refid="class_a_environment_search_system" prot="public">AEnvironmentSearchSystem</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="14"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;GameFramework/Actor.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ctime&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;EnvironmentSearchSystem.generated.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="struct_compare_by_vector_string" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_compare_by_vector_string" kindref="compound">CompareByVectorString</ref></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator()(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FVector<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>FVector<sp/>b)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="26"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a.ToString()<sp/>&lt;<sp/>b.ToString();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">UCLASS()</highlight></codeline>
+<codeline lineno="32" refid="class_a_environment_search_system" refkind="compound"><highlight class="normal">class<sp/>ENVSEARCHER_API<sp/><ref refid="class_a_environment_search_system" kindref="compound">AEnvironmentSearchSystem</ref><sp/>:<sp/>public<sp/>AActor</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>GENERATED_BODY()</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_a_environment_search_system" kindref="compound">AEnvironmentSearchSystem</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>BeginPlay()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Tick(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>DeltaSeconds)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>UPROPERTY(EditAnywhere,<sp/>BlueprintReadWrite)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>USceneComponent<sp/>*Scene;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>UPROPERTY(EditAnywhere,<sp/>BlueprintReadWrite)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>TArray&lt;FVector&gt;<sp/>SearchPoints;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>UPROPERTY(EditAnywhere,<sp/>BlueprintReadWrite)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bDebugMode;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>UPROPERTY(EditAnywhere,<sp/>BlueprintReadWrite)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bShowClockTime;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>UPROPERTY(EditAnywhere,<sp/>BlueprintReadWrite)</highlight></codeline>
+<codeline lineno="56" refid="class_a_environment_search_system_1a25aefcb32532d14d68ca67290f94bbef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>bool<sp/>bShowIndicatorBoxes;<sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>UPROPERTY(EditAnywhere,<sp/>BlueprintReadWrite)</highlight></codeline>
+<codeline lineno="59" refid="class_a_environment_search_system_1a5abdf57c9d9c425387b77f8c93b3d07f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bScaleIndicatorBoxValues;<sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>UPROPERTY(EditAnywhere,<sp/>BlueprintReadWrite)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>TSubclassOf&lt;class<sp/><ref refid="class_a_value_indicator_box" kindref="compound">AValueIndicatorBox</ref>&gt;<sp/>ValueIndicatorBoxClass;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;FVector,<sp/>class<sp/><ref refid="class_a_value_indicator_box" kindref="compound">AValueIndicatorBox</ref><sp/>*,<sp/><ref refid="struct_compare_by_vector_string" kindref="compound">CompareByVectorString</ref>&gt;<sp/>PointToValueIndicatorMap;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;FVector,<sp/>std::map&lt;class<sp/><ref refid="class_a_environment_test_actor" kindref="compound">AEnvironmentTestActor</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&gt;,<sp/><ref refid="struct_compare_by_vector_string" kindref="compound">CompareByVectorString</ref>&gt;<sp/>PointToTesterToScoreMap;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>there<sp/>are<sp/>two<sp/>maps<sp/>here<sp/>for<sp/>performance<sp/>reasons</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;FVector,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">,<sp/><ref refid="struct_compare_by_vector_string" kindref="compound">CompareByVectorString</ref>&gt;<sp/>PointToScoreMap;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">,<sp/>FVector&gt;<sp/>ScoreToPointMap;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>UPROPERTY(EditAnywhere,<sp/>BlueprintReadWrite)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>TArray&lt;class<sp/><ref refid="class_a_environment_test_actor" kindref="compound">AEnvironmentTestActor</ref><sp/>*&gt;<sp/>TestActors;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>UFUNCTION(BlueprintCallable,<sp/>Category<sp/>=<sp/>&quot;EnvironmentSearching&quot;)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>virtual<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>PerformSearch();<sp/></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>UFUNCTION(BlueprintCallable,<sp/>Category<sp/>=<sp/>&quot;EnvironmentSearching&quot;)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ScaleIndicatorBoxValues();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GetLowestScoringPoint(FVector<sp/>*Vector);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GetHighestScoringPoint(FVector<sp/>*Vector);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>UFUNCTION(BlueprintCallable,<sp/>Category<sp/>=<sp/>&quot;EnvironmentSearching&quot;)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GetLowestScoringPoint(FVector<sp/>&amp;VectorOUT);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>UFUNCTION(BlueprintCallable,<sp/>Category<sp/>=<sp/>&quot;EnvironmentSearching&quot;)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>GetHighestScoringPoint(FVector<sp/>&amp;VectorOUT);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>static<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SpawnIndicatorBoxes(AActor<sp/>*Parent,<sp/>std::map&lt;FVector,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">,<sp/><ref refid="struct_compare_by_vector_string" kindref="compound">CompareByVectorString</ref>&gt;<sp/>*PointToScoreMap,<sp/>TSubclassOf&lt;class<sp/><ref refid="class_a_value_indicator_box" kindref="compound">AValueIndicatorBox</ref>&gt;<sp/>ValueIndicatorBoxClass,<sp/>std::map&lt;FVector,<sp/>class<sp/><ref refid="class_a_value_indicator_box" kindref="compound">AValueIndicatorBox</ref><sp/>*,<sp/><ref refid="struct_compare_by_vector_string" kindref="compound">CompareByVectorString</ref>&gt;<sp/>*PointToValueIndicatorMap);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>static<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ScorePoints(TArray&lt;<ref refid="class_a_environment_test_actor" kindref="compound">AEnvironmentTestActor</ref><sp/>*&gt;<sp/>*TestActors,<sp/>TArray&lt;FVector&gt;<sp/>*Points,<sp/>std::map&lt;FVector,<sp/>std::map&lt;class<sp/><ref refid="class_a_environment_test_actor" kindref="compound">AEnvironmentTestActor</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&gt;,<sp/><ref refid="struct_compare_by_vector_string" kindref="compound">CompareByVectorString</ref>&gt;<sp/>*PointToTesterToScoreMap,<sp/>std::map&lt;FVector,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">,<sp/><ref refid="struct_compare_by_vector_string" kindref="compound">CompareByVectorString</ref>&gt;<sp/>*PointToScoreMap,<sp/>std::map&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">,<sp/>FVector&gt;<sp/>*ScoreToPointMap,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bDebugMode);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="EnvSearcher/SearchSystems/EnvironmentSearchSystem.h"/>
+  </compounddef>
+</doxygen>
